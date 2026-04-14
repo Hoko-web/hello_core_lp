@@ -75,9 +75,9 @@
   z-index: 2;
   background: linear-gradient(
     to right,
-    rgba($c-green, 0.85) 0%,
-    rgba($c-green, 0.4) 50%,
-    rgba($c-green, 0.1) 100%
+    rgba($c-green, 1) 0%,
+    rgba($c-green, 0.6) 30%,
+    rgba($c-green, 0.05) 100%
   );
 
   @media (max-width: 767px) {
