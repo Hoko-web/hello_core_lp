@@ -93,22 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ============================================
-  // 4a. トレーナー年齢を自動計算
-  // ============================================
-  const ageEl = document.getElementById("jsTrainerAge");
-  if (ageEl) {
-    const birthday = new Date(1972, 5, 22); // 1972年6月22日（月は0始まり）
-    const today = new Date();
-    let age = today.getFullYear() - birthday.getFullYear();
-    const m = today.getMonth() - birthday.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthday.getDate())) {
-      age--;
-    }
-    ageEl.textContent = age;
-  }
-
-  // ============================================
-  // 4b. 講師メッセージ「続きを読む」開閉
+  // 4. 講師メッセージ「続きを読む」開閉
   // ============================================
   // 長文メッセージを .is-closed の max-height: 0 で折りたたみ
   // ボタンテキストも「続きを読む / 閉じる」に連動して切り替え
