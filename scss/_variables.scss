@@ -31,8 +31,8 @@ $c-surface: $palette-white; // カード・コンテンツ面の白
 $c-heading: $palette-dark; // 見出しテキスト
 $c-text: #666; // 本文テキスト
 $c-text-light: #8a8a7a; // 補助テキスト
-$c-text-muted: #aaa; // 控えめテキスト
-$c-text-faint: #bbb; // 最も淡いテキスト
+$c-text-muted: #808070; // 控えめテキスト（旧#aaa → WCAG AA準拠 4.5:1以上）
+$c-text-faint: #918979; // 最も淡いテキスト（旧#bbb → WCAG AA準拠 4.5:1以上）
 
 // その他
 $c-border: #e8e3d9; // ボーダー・区切り線
