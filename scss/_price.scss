@@ -136,33 +136,33 @@
   &__private-heading {
     font-size: 12px;
     font-weight: 600;
-    color: #999;
+    color: $c-text-muted;
     text-align: center;
     margin-bottom: 10px;
   }
 
   // プライベートの料金アイテム（小さめ・淡い色）
   &__item--small {
-    border-bottom-color: #f0ece4;
+    border-bottom-color: $c-border;
 
     .price__item-name {
       font-size: 11px;
-      color: #999;
+      color: $c-text-muted;
     }
 
     .price__item-detail {
       font-size: 9px;
-      color: #ccc;
+      color: $c-text-faint;
     }
 
     .price__item-amount {
       font-size: 12px;
-      color: #999;
+      color: $c-text-muted;
     }
 
     .price__item-per {
       font-size: 9px;
-      color: #ccc;
+      color: $c-text-faint;
     }
   }
 

@@ -61,14 +61,3 @@ img {
     display: none;
   }
 }
-
-// --- 開発用: プレースホルダー画像 ---
-// 実装時に実際の <img> に差し替えてください
-.placeholder-img {
-  background: $c-primary-light;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 11px;
-}

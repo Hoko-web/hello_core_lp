@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
     <!-- Search Console: 所有権確認用 -->
-    <meta name="google-site-verification" content="TKytU2kCAKpVAr43rkTzNYL1K0jTiJMktEvrWLnfLGM" />
+    <meta
+      name="google-site-verification"
+      content="TKytU2kCAKpVAr43rkTzNYL1K0jTiJMktEvrWLnfLGM"
+    />
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
@@ -26,12 +30,14 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./img/はろこあ_logo.png"
+      href="./img/hellocore_logo.png"
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png" />
     <meta
       name="description"
       content="愛知県新城市で女性専用ピラティス教室「pilatesroom はろこあ」です！初心者大歓迎・運動不足だと感じている方も是非！少人数制レッスンとパーソナルレッスンをご用意しております。まずはLINEで無料体験のご予約お待ちしております！"
     />
+    <link rel="canonical" href="https://hoko-web.github.io/hello_core_lp/" />
 
     <!-- OGP: SNS・LINEでシェアされた時のプレビューカード表示
         デプロイ後に og:image と og:url を本番URLに書き換えること -->
@@ -43,8 +49,14 @@
       property="og:description"
       content="初心者歓迎・女性専用のピラティス教室。まずは無料体験から。"
     />
-    <meta property="og:image" content="https://hoko-web.github.io/hello_core_lp/img/ogp.jpg" />
-    <meta property="og:url" content="https://hoko-web.github.io/hello_core_lp/" />
+    <meta
+      property="og:image"
+      content="https://hoko-web.github.io/hello_core_lp/img/hellocore_logo.png"
+    />
+    <meta
+      property="og:url"
+      content="https://hoko-web.github.io/hello_core_lp/"
+    />
     <meta property="og:type" content="website" />
 
     <!-- ============================================
@@ -112,11 +124,13 @@
           <a
             href="https://www.instagram.com/hello__core?igsh=dHl6ZmRqNTRhZm9w&utm_source=qr"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             ><img
               src="./img/Instagram_logo.png"
               alt="Instagram logo"
               class="final-cta__ig-logo"
+              width="5000"
+              height="5000"
           /></a>
         </div>
       </div>
@@ -125,9 +139,11 @@
       <div class="container header__inner">
         <a href="#top">
           <img
-            src="./img/はろこあ_logo.png"
+            src="./img/hellocore_logo.png"
             alt="pilatesroom はろこあ"
             class="header__logo-img"
+            width="2119"
+            height="2067"
           />
         </a>
         <!-- ====== PC用ナビ　====== -->
@@ -169,19 +185,27 @@
         <!-- 写真スライドショー -->
         <div class="hero__photos">
           <img
-            src="./img/hero_photo1.JPG"
+            src="./img/hero_photo1.jpg"
             alt="ピラティスレッスンの様子"
             class="hero__photo is-active"
+            width="3600"
+            height="2400"
           />
           <img
-            src="./img/hero_photo2.JPG"
+            src="./img/hero_photo2.jpg"
             alt="マットピラティスの風景"
             class="hero__photo"
+            loading="lazy"
+            width="3600"
+            height="2400"
           />
           <img
-            src="./img/hero_photo3.JPG"
+            src="./img/hero_photo3.jpg"
             alt="はろこあのスタジオ内観"
             class="hero__photo"
+            loading="lazy"
+            width="3600"
+            height="2400"
           />
           <!-- グラデーションオーバーレイ -->
           <div class="hero__photo-overlay"></div>
@@ -314,9 +338,12 @@
           <h2 class="section-title">講師紹介</h2>
           <div class="trainer__content">
             <img
-              src="./img/trainer.JPG"
+              src="./img/trainer.jpg"
               alt="講師 鈴木一美"
               class="trainer__photo"
+              loading="lazy"
+              width="1045"
+              height="1567"
             />
 
             <div class="trainer__info">
@@ -468,7 +495,13 @@
           <h2 class="section-title">レッスンについて</h2>
           <div class="lesson__card" data-aos="fade-up">
             <div class="lesson__card-img">
-              <img src="./img/lesson_gloup2.JPG" alt="グループレッスン写真" loading="lazy" />
+              <img
+                src="./img/lesson_gloup2.jpg"
+                alt="グループレッスン写真"
+                loading="lazy"
+                width="2400"
+                height="3600"
+              />
             </div>
             <div class="lesson__card-body">
               <h3 class="lesson__card-title">
@@ -693,7 +726,7 @@
               </div>
               <div class="trial-day__body">
                 <div class="trial-day__photo">
-                  <img src="img/trial-hearing.jpg" alt="ヒアリングの様子" />
+                  <img src="img/trial-hearing.jpg" alt="ヒアリングの様子" loading="lazy" />
                 </div>
                 <p class="trial-day__text">
                   お身体の悩みや目標をお聞かせください。
@@ -715,7 +748,7 @@
               </div>
               <div class="trial-day__body">
                 <div class="trial-day__photo">
-                  <img src="img/trial-check.jpg" alt="お身体の状態チェックの様子" />
+                  <img src="img/trial-check.jpg" alt="お身体の状態チェックの様子" loading="lazy" />
                 </div>
                 <p class="trial-day__text">
                   現在の姿勢や柔軟性を一緒に確認します。
@@ -736,7 +769,7 @@
               </div>
               <div class="trial-day__body">
                 <div class="trial-day__photo">
-                  <img src="img/trial-lesson.jpg" alt="レッスンの様子" />
+                  <img src="img/trial-lesson.jpg" alt="レッスンの様子" loading="lazy" />
                 </div>
                 <p class="trial-day__text">
                   お一人おひとりに合った内容で進めます。
@@ -760,7 +793,7 @@
               </div>
               <div class="trial-day__body">
                 <div class="trial-day__photo">
-                  <img src="img/trial-future.jpg" alt="今後の変化についての説明" />
+                  <img src="img/trial-future.jpg" alt="今後の変化についての説明" loading="lazy" />
                 </div>
                 <p class="trial-day__text">
                   続けることでどう変わるかお伝えします。
@@ -882,11 +915,14 @@
             <a
               href="https://www.instagram.com/hello__core?igsh=dHl6ZmRqNTRhZm9w&utm_source=qr"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               ><img
                 src="./img/Instagram_logo.png"
                 alt="Instagram logo"
                 class="final-cta__ig-logo"
+                loading="lazy"
+                width="5000"
+                height="5000"
             /></a>
           </div>
         </div>
