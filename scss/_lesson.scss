@@ -76,7 +76,7 @@
 
   &__card-desc {
     font-size: 12px;
-    color: #777;
+    color: $c-text;
     line-height: 1.8;
   }
 
@@ -124,7 +124,7 @@
     color: $c-text-faint;
     display: inline-block;
     margin-top: 6px;
-    border: 1px solid #ddd;
+    border: 1px solid $c-border;
     padding: 2px 10px;
     border-radius: 10px;
   }
