@@ -1,20 +1,23 @@
+# 依存パッケージ
 node_modules/
-*.xlsx
-*.xls
-*.xlsm
 
-# macOS
+# OS
 .DS_Store
+Thumbs.db
 
 # エディタ設定
 .vscode/
+.idea/
 
 # ソースマップ（開発用）
 *.map
 
-# npm設定（開発用）
-package.json
-package-lock.json
+# Office系ドキュメント
+*.xlsx
+*.xls
+*.xlsm
+*.docx
+*.doc
 
-# 個人ドキュメント
+# 個人メモ（リポジトリに含めない資料）
 LP分析ツール導入ガイド.md

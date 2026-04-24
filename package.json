@@ -1,0 +1,23 @@
+{
+  "name": "hello_core_lp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hoko-web/hello_core_lp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hoko-web/hello_core_lp/issues"
+  },
+  "homepage": "https://github.com/Hoko-web/hello_core_lp#readme",
+  "dependencies": {
+    "sass": "^1.99.0"
+  }
+}
