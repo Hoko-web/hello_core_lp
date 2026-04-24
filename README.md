@@ -22,13 +22,19 @@ https://hoko-web.github.io/hello_core_lp/
 
 ## スクリーンショット
 
-### PC版
+<details>
+<summary>PC版を表示</summary>
 
 ![PC版](./docs/screenshots/hello_core_pc.png)
 
-### SP版
+</details>
 
-<img src="./docs/screenshots/hello_core_sp.png" width="400" alt="SP版">
+<details>
+<summary>SP版を表示</summary>
+
+<img src="./docs/screenshots/hello_core_sp.png" width="300" alt="SP版">
+
+</details>
 
 ## 制作情報
 
