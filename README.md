@@ -38,5 +38,4 @@ https://hoko-web.github.io/hello_core_lp/
 
 ## 制作情報
 
-- 制作期間: 2026年4月（約3週間）
 - 制作: Hiro
