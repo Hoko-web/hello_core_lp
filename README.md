@@ -12,7 +12,7 @@ https://hoko-web.github.io/hello_core_lp/
 - Sass (SCSS)
 - JavaScript (Vanilla)
 
-## こだわりポイント
+## ポイント
 
 - Retina対応の画像最適化による高精細表示
 - Google Fontsの非同期読み込みによる表示速度改善
