@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hoko-web.github.io/hello_core_lp/sitemap.xml
+Sitemap: https://hello-core-lp.pages.dev/sitemap.xml

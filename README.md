@@ -4,7 +4,7 @@
 
 ## Live Demo
 
-https://hoko-web.github.io/hello_core_lp/
+https://hello-core-lp.pages.dev/
 
 ## 使用技術
 
