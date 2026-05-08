@@ -15,31 +15,6 @@
     padding: 80px 0;
   }
 
-  &__info {
-    font-size: 13px;
-    color: $c-text;
-    line-height: 2.2;
-
-    @include desktop {
-      max-width: $max-w-md;
-      margin: 0 auto;
-    }
-  }
-
-  // 各情報行（定義リストの行ラッパー）
-  &__row {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-bottom: 4px;
-
-    dt {
-      font-weight: 600;
-      white-space: nowrap;
-      color: $c-heading;
-    }
-  }
-
   .container {
     @include tablet {
       max-width: 480px;
@@ -48,5 +23,29 @@
     @include desktop {
       max-width: 700px;
     }
+  }
+}
+
+.access__info {
+  font-size: 16px;
+  color: $c-text;
+  line-height: 2.2;
+
+  @include desktop {
+    max-width: $max-w-md;
+    margin: 0 auto;
+  }
+}
+
+.access__row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 4px;
+
+  dt {
+    font-weight: 600;
+    white-space: nowrap;
+    color: $c-heading;
   }
 }

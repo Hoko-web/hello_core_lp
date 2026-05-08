@@ -4,47 +4,49 @@
 // 無料体験への導線を強化するセクション
 // ============================================
 
-// ----- Mid CTA -----
 .mid-cta {
   background: $c-surface;
-  padding: 48px 0;
+  padding-top: 0;
+  padding-bottom: 48px;
+
   text-align: center;
 
   @include tablet {
-    padding: 64px 0;
+    padding-top: 0;
+    padding-bottom: 64px;
   }
 
   @include desktop {
-    padding: 80px 0;
-  }
-
-  &__lead {
-    font-size: 17px;
-    font-weight: 600;
-    color: $c-heading;
-    margin-bottom: 6px;
-    line-height: 1.8;
-
-    @include tablet {
-      font-size: 20px;
-    }
-  }
-
-  &__sub {
-    font-size: 12px;
-    color: $c-primary;
-    margin-bottom: 20px;
-  }
-
-  &__note {
-    font-size: 11px;
-    color: $c-text-muted;
-    text-align: center;
-    margin-top: 10px;
+    padding-top: 0;
+    padding-bottom: 80px;
   }
 }
 
-// ----- Final CTA -----
+.mid-cta__lead {
+  font-size: 18px;
+  font-weight: 600;
+  color: $c-heading;
+  margin-bottom: 6px;
+  line-height: 1.8;
+
+  @include tablet {
+    font-size: 20px;
+  }
+}
+
+.mid-cta__sub {
+  font-size: 14px;
+  color: $c-primary;
+  margin-bottom: 20px;
+}
+
+.mid-cta__note {
+  font-size: 14px;
+  color: $c-text-muted;
+  text-align: center;
+  margin-top: 10px;
+}
+
 .final-cta {
   background: $c-primary;
   padding: 56px 0 48px;
@@ -59,72 +61,72 @@
   @include desktop {
     padding: 80px 0;
   }
+}
 
-  // 波型SVG（上部装飾 - クリーム面からグリーンへの接続）
-  &__wave {
-    position: absolute;
-    top: -20px;
-    left: 0;
-    right: 0;
-    height: 20px;
-    overflow: hidden;
+// 波型SVG（上部装飾 - クリーム面からグリーンへの接続）
+.final-cta__wave {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  overflow: hidden;
 
-    svg {
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
-
-    @include tablet {
-      height: 30px;
-      top: -30px;
-    }
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
-  &__label {
-    font-size: 10px;
-    opacity: 0.4;
-    letter-spacing: 2px;
-    margin-bottom: 4px;
+  @include tablet {
+    height: 30px;
+    top: -30px;
   }
+}
 
-  &__main {
-    font-family: $ff-serif;
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 6px;
+.final-cta__label {
+  font-size: 14px;
+  opacity: 0.4;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
 
-    @include tablet {
-      font-size: 26px;
-    }
+.final-cta__main {
+  font-family: $ff-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+
+  @include tablet {
+    font-size: 26px;
   }
+}
 
-  &__sub {
-    font-size: 12px;
-    opacity: 0.7;
-    margin-bottom: 20px;
-  }
+.final-cta__sub {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
 
-  &__note {
-    font-size: 11px;
-    color: rgba(255, 255, 255, 0.5);
-    text-align: center;
-    margin-top: 10px;
-  }
+.final-cta__note {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-top: 10px;
+}
 
-  // Instagramリンク
-  &__ig {
-    max-width: 40px;
-    height: 40px;
-    margin: 0 auto;
-    margin-top: 16px;
+// Instagramリンク
+.final-cta__ig {
+  max-width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 16px;
 
-    a img {
-      transition: transform 0.3s ease;
+  a img {
+    transition: transform 0.3s ease;
 
-      &:hover {
-        transform: translateY(-4px);
-      }
+    &:hover {
+      transform: translateY(-4px);
     }
   }
 }

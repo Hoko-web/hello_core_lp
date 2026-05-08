@@ -15,67 +15,64 @@
   @include desktop {
     padding: 80px 0;
   }
+}
 
-  // --- リード文（大きな問いかけ） ---
-  &__lead {
-    font-size: 20px;
-    text-align: center;
-    line-height: 2.2;
-    color: $c-heading;
-    margin-bottom: 36px;
-    font-weight: 300;
+.empathy__lead {
+  font-size: 20px;
+  text-align: center;
+  line-height: 2.2;
+  color: $c-heading;
+  margin-bottom: 36px;
+  font-weight: 300;
 
-    strong {
-      font-weight: 600;
-      color: $c-primary;
-    }
-
-    @include tablet {
-      font-size: 24px;
-      margin-bottom: 44px;
-    }
+  strong {
+    font-weight: 600;
+    color: $c-primary;
   }
 
-  // --- 悩みリスト ---
-  // モバイル: 縦並び / タブレット: 2列 / デスクトップ: 3列
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  @include tablet {
+    font-size: 24px;
+    margin-bottom: 44px;
+  }
+}
 
-    @include tablet {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-    }
+// モバイル: 縦並び / タブレット: 2列 / デスクトップ: 3列
+.empathy__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 
-    @include desktop {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
-  // --- 各悩みアイテム（ピル型） ---
-  &__item {
-    font-size: 13px;
-    padding: 14px 20px;
-    background: $c-surface;
-    border-radius: 40px;
-    color: $c-text-light;
-    text-align: center;
-    line-height: 1.5;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.03);
+  @include desktop {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  // --- クロージングメッセージ ---
-  &__closing {
-    font-size: 14px;
-    text-align: center;
-    color: $c-text-light;
-    line-height: 2;
-    margin-top: 28px;
+.empathy__item {
+  font-size: 14px;
+  padding: 14px 20px;
+  background: $c-surface;
+  border-radius: 40px;
+  color: $c-text-light;
+  text-align: center;
 
-    @include tablet {
-      margin-top: 36px;
-    }
+  line-height: 1.5;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.03);
+}
+
+.empathy__closing {
+  font-size: 16px;
+  text-align: center;
+  color: $c-text-light;
+  line-height: 2;
+  margin-top: 28px;
+
+  @include tablet {
+    margin-top: 36px;
   }
 }

@@ -18,109 +18,101 @@
     padding: 80px 0;
     max-width: $max-w-lg;
   }
+}
 
-  // --- コンテンツラッパー（全サイズ縦積み） ---
-  &__content {
-    display: flex;
-    flex-direction: column;
+.trainer__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.trainer__photo {
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 240px;
+  border-radius: 24px;
+  margin-bottom: 24px;
+  object-fit: cover;
+  object-position: center 40%;
+
+  @include tablet {
+    height: 280px;
   }
 
-  // --- 講師写真 ---
-  &__photo {
-    width: 100%;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 240px;
-    border-radius: 24px;
-    margin-bottom: 24px;
-    object-fit: cover;
-    object-position: center 40%;
-
-    @include tablet {
-      height: 280px;
-    }
-
-    @include desktop {
-      height: 320px;
-    }
+  @include desktop {
+    height: 320px;
   }
+}
 
-  // --- 講師名 ---
-  &__name {
-    font-family: $ff-serif;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 2px;
+.trainer__name {
+  font-family: $ff-serif;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 2px;
 
-    @include tablet {
-      font-size: 22px;
-    }
+  @include tablet {
+    font-size: 22px;
   }
+}
 
-  // --- ふりがな ---
-  &__name-sub {
-    font-size: 11px;
-    color: $c-text-muted;
-    text-align: center;
-    margin-bottom: 16px;
-  }
+.trainer__name-sub {
+  font-size: 14px;
+  color: $c-text-muted;
+  text-align: center;
+  margin-bottom: 16px;
+}
 
-  // --- プロフィールライン ---
-  &__profile-line {
-    text-align: center;
-    margin-top: 12px;
-    margin-bottom: 20px;
-    padding: 12px 0;
-    border-top: 1px solid $c-border;
-    border-bottom: 1px solid $c-border;
+.trainer__profile-line {
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 20px;
+  padding: 12px 0;
+  border-top: 1px solid $c-border;
+  border-bottom: 1px solid $c-border;
 
-    p {
-      font-size: 12px;
-      color: $c-text-light;
-      letter-spacing: 1px;
-      line-height: 1.8;
-    }
-  }
-
-  // --- メッセージ（白背景カード） ---
-  &__message {
-    font-size: 13px;
-    color: $c-text;
-    line-height: 2.2;
-    padding: 20px 24px;
-    background: $c-surface;
-    border-radius: 16px;
-
-    @include tablet {
-      font-size: 14px;
-    }
-  }
-
-  // --- 続き部分（開閉） ---
-  &__message-more {
-    max-height: 1000px;
-    opacity: 1;
-    overflow: hidden;
-    transition:
-      max-height 1.4s ease,
-      opacity 0.3s ease;
-
-    &.is-closed {
-      max-height: 0;
-      opacity: 0;
-    }
-  }
-
-  // --- 続きを読むボタン ---
-  &__toggle {
+  p {
     font-size: 12px;
-    color: $c-primary;
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: block;
-    margin: 12px auto 0;
+    color: $c-text-light;
     letter-spacing: 1px;
+    line-height: 1.8;
   }
+}
+
+.trainer__message {
+  font-size: 14px;
+  color: $c-text;
+  line-height: 2.2;
+  padding: 20px 24px;
+  background: $c-surface;
+  border-radius: 16px;
+
+  @include tablet {
+    font-size: 14px;
+  }
+}
+
+.trainer__message-more {
+  max-height: 1000px;
+  opacity: 1;
+  overflow: hidden;
+  transition:
+    max-height 1.4s ease,
+    opacity 0.3s ease;
+
+  &.is-closed {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+
+.trainer__toggle {
+  font-size: 14px;
+  color: $c-primary;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 12px auto 0;
+  letter-spacing: 1px;
 }

@@ -15,76 +15,70 @@
   @include desktop {
     padding: 80px 0;
   }
+}
 
-  // --- カードラッパー ---
-  &__list {
-    @include tablet {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-    }
-
-    @include desktop {
-      grid-template-columns: repeat(2, 1fr);
-    }
+.voice__list {
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 
-  // --- 各声カード ---
-  &__item {
-    padding: 28px 24px;
-    background: $c-bg;
-    border-radius: 20px;
-    margin-bottom: 14px;
-    position: relative;
+  @include desktop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-    // 装飾: 大きな引用符
-    &::before {
-      content: "\201C"; // 左ダブルクォーテーション
-      font-size: 60px;
-      color: $c-primary-light;
-      font-family: Georgia, serif;
-      position: absolute;
-      top: 10px;
-      left: 18px;
-      line-height: 1;
-    }
+.voice__item {
+  padding: 28px 24px;
+  background: $c-bg;
+  border-radius: 20px;
+  margin-bottom: 14px;
+  position: relative;
 
-    @include tablet {
-      margin-bottom: 0;
-    }
+  // 装飾: 大きな引用符
+  &::before {
+    content: "\201C"; // 左ダブルクォーテーション
+    font-size: 60px;
+    color: $c-primary-light;
+    font-family: Georgia, serif;
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    line-height: 1;
   }
 
-  // --- 通う前の状態 ---
-  &__before {
-    font-size: 11px;
-    color: $c-primary;
-    margin-bottom: 8px;
-    font-style: italic;
+  @include tablet {
+    margin-bottom: 0;
   }
+}
 
-  // --- 引用メッセージ ---
-  &__quote {
-    font-size: 15px;
-    color: $c-heading;
-    line-height: 1.9;
-    padding-left: 8px;
-    margin-bottom: 12px;
-    font-style: normal;
-  }
+.voice__before {
+  font-size: 14px;
+  color: $c-primary;
+  margin-bottom: 8px;
+  font-style: italic;
+}
 
-  // --- 詳細な感想 ---
-  &__body {
-    font-size: 12px;
-    color: $c-text-light;
-    line-height: 1.8;
-  }
+.voice__quote {
+  font-size: 16px;
+  color: $c-heading;
+  line-height: 1.9;
+  padding-left: 8px;
+  margin-bottom: 12px;
+  font-style: normal;
+}
 
-  // --- 名前・属性 ---
-  &__who {
-    font-size: 11px;
-    color: $c-text-muted;
-    margin-top: 10px;
-    text-align: right;
-    font-style: normal;
-  }
+.voice__body {
+  font-size: 14px;
+  color: $c-text-light;
+  line-height: 1.8;
+}
+
+.voice__who {
+  font-size: 12px;
+  color: $c-text-muted;
+  margin-top: 10px;
+  text-align: right;
+  font-style: normal;
 }

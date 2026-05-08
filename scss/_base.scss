@@ -13,7 +13,7 @@ body {
   font-family: $ff-sans;
   color: $c-heading;
   background: $c-bg;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.8;
   letter-spacing: 1.5px;
   -webkit-font-smoothing: antialiased;
@@ -26,9 +26,7 @@ img {
   display: block;
 }
 
-// --- レイアウトコンテナ ---
-// 各セクション内のコンテンツ幅を制御するユーティリティクラス
-// セクション自体は全幅（背景色が画面端まで広がる）
+// セクション自体は全幅（背景色が画面端まで広がる）。
 // .container で内部コンテンツの最大幅を制限し中央寄せ
 .container {
   width: 100%;
@@ -55,7 +53,7 @@ img {
   }
 }
 
-// --- SP専用改行（タブレット以上で非表示） ---
+// SP専用改行: タブレット以上では非表示
 .br-sp {
   @include tablet {
     display: none;

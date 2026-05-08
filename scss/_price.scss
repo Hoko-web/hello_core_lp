@@ -16,156 +16,6 @@
     padding: 80px 0;
   }
 
-  // --- 無料体験バナー ---
-  &__free-box {
-    text-align: center;
-    padding: 15px;
-    background: $c-bg-alt;
-    border-radius: 16px;
-    margin-bottom: 20px;
-  }
-
-  &__free-value {
-    font-size: 20px;
-    font-weight: 700;
-    color: $c-primary;
-  }
-
-  &__free-sub {
-    font-size: 10px;
-    color: $c-text-light;
-  }
-
-  // --- 料金アイテム（通常） ---
-  &__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 14px 0;
-    border-bottom: 1px solid $c-border;
-  }
-
-  &__item-name {
-    font-size: 13px;
-    font-weight: 600;
-    display: block;
-
-    // おすすめプラン用（大きめ表示）
-    &--lg {
-      font-size: 14px;
-      font-weight: 700;
-    }
-  }
-
-  &__item-detail {
-    font-size: 10px;
-    color: $c-text-faint;
-    margin-top: 2px;
-    display: block;
-  }
-
-  &__item-amount {
-    font-size: 14px;
-    font-weight: 700;
-    color: $c-primary;
-    display: block;
-
-    // おすすめプラン用（大きめ表示）
-    &--lg {
-      font-size: 17px;
-    }
-  }
-
-  &__item-per {
-    font-size: 10px;
-    color: $c-text-muted;
-    text-align: right;
-    display: block;
-  }
-
-  // --- おすすめプラン（12回券） ---
-  // ボーダーとバッジで視覚的に目立たせる
-  &__recommend {
-    border: 2px solid $c-primary;
-    border-radius: 16px;
-    padding: 18px;
-    margin: 12px 0;
-    position: relative;
-    background: $c-bg-recommend;
-  }
-
-  &__recommend-badge {
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: $c-primary;
-    color: $c-surface;
-    font-size: 10px;
-    padding: 3px 14px;
-    border-radius: 10px;
-    white-space: nowrap;
-  }
-
-  &__recommend-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 6px;
-  }
-
-  &__recommend-note {
-    font-size: 10px;
-    color: $c-text-light;
-    margin-top: 8px;
-    text-align: center;
-  }
-
-  // --- 税込注記 ---
-  &__note {
-    font-size: 10px;
-    color: $c-text-faint;
-    margin-top: 14px;
-  }
-
-  // --- プライベートレッスン料金（控えめ表示） ---
-  &__private {
-    margin-top: 28px;
-  }
-
-  &__private-heading {
-    font-size: 12px;
-    font-weight: 600;
-    color: $c-text-muted;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  // プライベートの料金アイテム（小さめ・淡い色）
-  &__item--small {
-    border-bottom-color: $c-border;
-
-    .price__item-name {
-      font-size: 11px;
-      color: $c-text-muted;
-    }
-
-    .price__item-detail {
-      font-size: 9px;
-      color: $c-text-faint;
-    }
-
-    .price__item-amount {
-      font-size: 12px;
-      color: $c-text-muted;
-    }
-
-    .price__item-per {
-      font-size: 9px;
-      color: $c-text-faint;
-    }
-  }
-
   .container {
     @include tablet {
       max-width: 480px;
@@ -174,5 +24,150 @@
     @include desktop {
       max-width: 540px;
     }
+  }
+}
+
+.price__free-box {
+  text-align: center;
+  padding: 15px;
+  background: $c-bg-alt;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.price__free-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: $c-primary;
+}
+
+.price__free-sub {
+  font-size: 12px;
+  color: $c-text-light;
+}
+
+.price__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid $c-border;
+}
+
+.price__item-name {
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+}
+
+// おすすめプラン用（大きめ表示）
+.price__item-name--lg {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.price__item-detail {
+  font-size: 12px;
+  color: $c-text-faint;
+  margin-top: 2px;
+  display: block;
+}
+
+.price__item-amount {
+  font-size: 16px;
+  font-weight: 700;
+  color: $c-primary;
+  display: block;
+}
+
+// おすすめプラン用（大きめ表示）
+.price__item-amount--lg {
+  font-size: 18px;
+}
+
+.price__item-per {
+  font-size: 12px;
+  color: $c-text-muted;
+  text-align: right;
+  display: block;
+}
+
+// --- おすすめプラン（12回券） ---
+// ボーダーとバッジで視覚的に目立たせる
+.price__recommend {
+  border: 2px solid $c-primary;
+  border-radius: 16px;
+  padding: 18px;
+  margin: 12px 0;
+  position: relative;
+  background: $c-bg-recommend;
+}
+
+.price__recommend-badge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $c-primary;
+  color: $c-surface;
+  font-size: 14px;
+  padding: 3px 14px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.price__recommend-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6px;
+}
+
+.price__recommend-note {
+  font-size: 12px;
+  color: $c-text-light;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.price__note {
+  font-size: 12px;
+  color: $c-text-faint;
+  margin-top: 14px;
+}
+
+.price__private {
+  margin-top: 28px;
+}
+
+.price__private-heading {
+  font-size: 14px;
+  font-weight: 600;
+  color: $c-text-muted;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.price__item--small {
+  border-bottom-color: $c-border;
+
+  .price__item-name {
+    font-size: 12px;
+    color: $c-text-muted;
+  }
+
+  .price__item-detail {
+    font-size: 10px;
+    color: $c-text-faint;
+  }
+
+  .price__item-amount {
+    font-size: 14px;
+    color: $c-text-muted;
+  }
+
+  .price__item-per {
+    font-size: 10px;
+    color: $c-text-faint;
   }
 }

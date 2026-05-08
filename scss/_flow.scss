@@ -16,60 +16,6 @@
     padding: 80px 0;
   }
 
-  // --- ステップリスト ---
-  &__steps {
-    margin-bottom: 24px;
-  }
-
-  // --- 各ステップ ---
-  &__step {
-    display: flex;
-    gap: 14px;
-    margin-bottom: 20px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  // --- ステップ番号（丸型） ---
-  &__num {
-    width: 32px;
-    height: 32px;
-    border: 1.5px solid $c-primary-light;
-    border-radius: 50%;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    color: $c-primary;
-    font-weight: 600;
-  }
-
-  &__step-title {
-    font-size: 13px;
-    font-weight: 600;
-    color: $c-heading;
-  }
-
-  &__step-text {
-    font-size: 11px;
-    color: $c-text-muted;
-    line-height: 1.6;
-  }
-
-  // --- CTA ---
-  &__cta {
-    text-align: center;
-  }
-
-  &__cta-label {
-    font-size: 12px;
-    color: $c-text;
-    margin-bottom: 10px;
-  }
-
   .container {
     @include tablet {
       max-width: 480px;
@@ -79,4 +25,55 @@
       max-width: 700px;
     }
   }
+}
+
+.flow__steps {
+  margin-bottom: 36px;
+}
+
+.flow__step {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 26px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.flow__num {
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid $c-primary-light;
+  border-radius: 50%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: $c-primary;
+  font-weight: 600;
+}
+
+.flow__step-title {
+  font-size: 18px;
+  margin-bottom: 14px;
+  font-weight: 600;
+  color: $c-heading;
+}
+
+.flow__step-text {
+  font-size: 16px;
+  color: $c-text-muted;
+  line-height: 1.6;
+}
+
+.flow__cta {
+  text-align: center;
+}
+
+.flow__cta-label {
+  font-size: 12px;
+  color: $c-text;
+  margin-bottom: 10px;
 }

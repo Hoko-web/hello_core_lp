@@ -48,16 +48,15 @@
 
 // --- 開いた状態（.is-open 付与時） ---
 .sp-nav.is-open {
-  // クリック受け付けを有効に
   pointer-events: auto;
+}
 
-  .sp-nav__overlay {
-    opacity: 1;
-  }
+.sp-nav.is-open .sp-nav__overlay {
+  opacity: 1;
+}
 
-  .sp-nav__body {
-    transform: translateX(0); // 画面内にスライド
-  }
+.sp-nav.is-open .sp-nav__body {
+  transform: translateX(0); // 画面内にスライド
 }
 
 .sp-nav__list {

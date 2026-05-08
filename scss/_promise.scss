@@ -15,69 +15,64 @@
   @include desktop {
     padding: 80px 0;
   }
+}
 
-  // --- ブロックラッパー（デスクトップでグリッド化） ---
-  &__blocks {
-    @include desktop {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 32px;
-    }
+// デスクトップで3カラムグリッド化
+.promise__blocks {
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+  }
+}
+
+.promise__block {
+  margin-bottom: 56px;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 
-  // --- 各約束ブロック ---
-  &__block {
-    margin-bottom: 56px;
-    text-align: center;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    @include desktop {
-      margin-bottom: 0;
-    }
+  @include desktop {
+    margin-bottom: 0;
   }
+}
 
-  // --- 大きな番号（01, 02, 03） ---
-  &__num {
-    display: block;
-    font-family: $ff-serif;
-    font-size: 48px;
-    font-weight: 200;
-    color: $c-primary-light;
-    line-height: 1;
-    margin-bottom: 4px;
+.promise__num {
+  display: block;
+  font-family: $ff-serif;
+  font-size: 48px;
+  font-weight: 200;
+  color: $c-primary-light;
+  line-height: 1;
+  margin-bottom: 4px;
 
-    @include desktop {
-      font-size: 40px;
-    }
+  @include desktop {
+    font-size: 40px;
   }
+}
 
-  // --- 見出し ---
-  &__heading {
-    font-size: 16px;
-    font-weight: 600;
-    color: $c-heading;
-    margin-bottom: 8px;
+.promise__heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: $c-heading;
+  margin-bottom: 8px;
 
-    @include tablet {
-      font-size: 17px;
-    }
+  @include tablet {
+    font-size: 17px;
   }
+}
 
-  // --- 説明文 ---
-  &__text {
-    font-size: 12px;
-    color: $c-text-light;
-    line-height: 1.8;
-    margin-bottom: 14px;
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+.promise__text {
+  font-size: 14px;
+  color: $c-text-light;
+  line-height: 1.8;
+  margin-bottom: 14px;
+  max-width: 350px;
+  text-align: center;
 
-    @include desktop {
-      max-width: none;
-    }
+  @include desktop {
+    max-width: none;
   }
 }

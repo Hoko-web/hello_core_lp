@@ -28,7 +28,6 @@
   }
 }
 
-// --- 写真スライドショー ---
 .hero__photos {
   position: absolute;
   top: 0;
@@ -49,7 +48,6 @@
   }
 }
 
-// --- 各写真重ねてクロスフェード ---
 .hero__photo {
   position: absolute;
   top: 0;
@@ -65,7 +63,6 @@
   }
 }
 
-// --- グラデーションオーバーレイ ---
 .hero__photo-overlay {
   position: absolute;
   top: 0;
@@ -89,7 +86,6 @@
     );
   }
 }
-// --- コピーエリア ---
 .hero__content {
   position: relative;
   z-index: 3;
@@ -104,11 +100,10 @@
   }
 }
 
-// --- キャッチコピー ---
 .hero__title {
   font-family: $ff-serif;
   font-size: 26px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.9;
   margin-bottom: 10px;
 
@@ -117,11 +112,11 @@
   }
 
   @include desktop {
-    font-size: 36px;
+    font-size: 40px;
   }
 }
 
-// --- 行ごとのアニメーション ---
+// 行ごとに時差フェードイン
 .hero__title-line {
   display: block;
   opacity: 0;
@@ -133,20 +128,18 @@
   }
 }
 
-// --- サブコピー ---
 .hero__sub {
-  font-size: 12px;
+  font-size: 14px;
   opacity: 0;
   animation: heroFadeUp 0.8s ease 0.5s forwards;
   margin-bottom: 24px;
   letter-spacing: 1px;
 
   @include tablet {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
-// --- バッジ ---
 .hero__badges {
   display: flex;
   gap: 8px;
@@ -161,16 +154,15 @@
 }
 
 .hero__badge {
-  font-size: 10px;
+  font-size: 14px;
   padding: 5px 14px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.12);
   color: rgba(255, 255, 255, 0.85);
 }
 
-// --- 無料体験ラベル ---
 .hero__free-label {
-  font-size: 12px;
+  font-size: 14px;
   opacity: 0;
   animation: heroFadeUp 0.8s ease 0.9s forwards;
   margin-bottom: 12px;
@@ -181,7 +173,7 @@
   }
 }
 
-// --- CTAボタンもフェード ---
+// 他要素と揃えて遅延フェードイン
 .hero__content .btn {
   opacity: 0;
   animation: heroFadeUp 0.8s ease 1.1s forwards;
@@ -201,8 +193,7 @@
   }
 }
 
-// --- 波型SVG ---
-// セクション下部に配置し、次のクリームセクションへ自然に繋げる
+// 下部の波型SVG。次のクリームセクションへ自然に繋げる装飾
 .hero__wave {
   position: absolute;
   bottom: -1px;
@@ -226,7 +217,6 @@
     height: 80px;
   }
 }
-// --- フェードアップアニメーション ---
 @keyframes heroFadeUp {
   from {
     opacity: 0;

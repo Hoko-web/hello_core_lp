@@ -9,50 +9,50 @@
   top: 0;
   z-index: 100;
   background: $c-bg;
+}
 
-  // ヘッダー内部（container を併用）
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
+// ヘッダー内部（container を併用）
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
-    @include tablet {
-      max-width: 900px;
-    }
-
-    @include desktop {
-      padding-top: 10px;
-      padding-bottom: 10px;
-      max-width: 1080px;
-    }
+  @include tablet {
+    max-width: 900px;
   }
 
-  // ロゴ画像（img/logo.png を差し替え）
-  &__logo-img {
-    height: 50px;
-    width: auto;
-
-    @include tablet {
-      transform: scale(1.4);
-    }
+  @include desktop {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 1080px;
   }
+}
 
-  // LINE予約ボタン
-  &__cta-btn {
-    font-size: 12px;
-    padding: 10px 15px;
-    background: $c-primary;
-    color: $c-surface;
-    border-radius: 50px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    transition: opacity 0.3s ease;
+// ロゴ画像（img/logo.png を差し替え）
+.header__logo-img {
+  height: 50px;
+  width: auto;
 
-    &:hover {
-      opacity: 0.85;
-    }
+  @include tablet {
+    transform: scale(1.4);
+  }
+}
+
+// LINE予約ボタン
+.header__cta-btn {
+  font-size: 12px;
+  padding: 10px 15px;
+  background: $c-primary;
+  color: $c-surface;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.85;
   }
 }
 
@@ -127,16 +127,14 @@
   }
 }
 
-.hamburger.is-open {
-  .hamburger__line:nth-child(1) {
-    top: 9px;
-    transform: rotate(45deg);
-  }
-  .hamburger__line:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger__line:nth-child(3) {
-    bottom: 9px;
-    transform: rotate(-45deg);
-  }
+.hamburger.is-open .hamburger__line:nth-child(1) {
+  top: 9px;
+  transform: rotate(45deg);
+}
+.hamburger.is-open .hamburger__line:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.is-open .hamburger__line:nth-child(3) {
+  bottom: 9px;
+  transform: rotate(-45deg);
 }

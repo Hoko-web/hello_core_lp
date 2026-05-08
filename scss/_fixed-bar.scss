@@ -22,18 +22,18 @@
   &.is-visible {
     transform: translateY(0);
   }
+}
 
-  // LINE予約ボタン
-  &__line {
-    flex: 3;
-    padding: 12px;
-    font-size: 12px;
-    max-width: 400px; // .btn の max-width を上書き
-    // .btn の margin: auto を上書き
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+// LINE予約ボタン
+.fixed-bar__line {
+  flex: 3;
+  padding: 12px;
+  font-size: 12px;
+  max-width: 400px; // .btn の max-width を上書き
+  // .btn の margin: auto を上書き
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 // 固定バーの高さ分、コンテンツが隠れないためのスペーサー

@@ -3,7 +3,6 @@
 // 複数セクションで共通利用するUIパーツ
 // ============================================
 
-// --- ボタン共通 ---
 .btn {
   display: block;
   padding: 15px 24px;
@@ -17,72 +16,67 @@
   &:hover {
     opacity: 0.85;
   }
-
-  // グリーンボタン（メインCTA）
-  &--green {
-    background: $c-primary;
-    color: $c-surface;
-    max-width: 280px;
-    margin: 0 auto;
-  }
-
-  // 白ボタン（グリーン背景上で使用）
-  &--white {
-    background: $c-surface;
-    color: $c-primary;
-    max-width: 270px;
-    margin: 0 auto;
-  }
-
-  &--menu {
-    padding: 10px 20px;
-    border-radius: 50px;
-    background: $c-primary;
-    color: $c-surface;
-    max-width: 260px;
-    margin: 0 auto;
-  }
 }
 
-// --- セクション英字ラベル（例: PROMISE, VOICE） ---
+.btn--green {
+  background: $c-primary;
+  color: $c-surface;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+// 白ボタン（グリーン背景上で使用）
+.btn--white {
+  background: $c-surface;
+  color: $c-primary;
+  max-width: 270px;
+  margin: 0 auto;
+}
+
+.btn--menu {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: $c-primary;
+  color: $c-surface;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
 .section-label {
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: $c-primary;
   text-align: center;
   margin-bottom: 6px;
-
-  // 淡いグリーン背景セクション用（濃い文字色）
-  &--green {
-    color: $c-primary;
-  }
 }
 
-// --- セクションタイトル ---
+// 淡いグリーン背景セクション用（濃い文字色）
+.section-label--green {
+  color: $c-primary;
+}
+
 .section-title {
   font-family: $ff-serif;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 28px;
   color: $c-heading;
 
   @include tablet {
-    font-size: 20px;
+    font-size: 26px;
     margin-bottom: 36px;
   }
 
   @include desktop {
-    font-size: 22px;
+    font-size: 26px;
     margin-bottom: 40px;
   }
-
 }
 
-// --- 注釈テキスト ---
 .note-sm {
-  font-size: 11px;
+  font-size: 12px;
   color: $c-text-muted;
   text-align: center;
   margin-top: 10px;
