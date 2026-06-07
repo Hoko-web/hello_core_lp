@@ -1,0 +1,213 @@
+// Trainer - 講師紹介（メッセージは .p-trainer__toggle で開閉）
+
+@use "../../foundation/variable" as *;
+@use "../../foundation/mixin" as *;
+
+.p-trainer {
+  padding: 56px 0;
+  max-width: 500px;
+  margin: 0 auto;
+
+  @include mq(tb) {
+    padding: 64px 0;
+    max-width: $max-w-md;
+  }
+
+  @include mq(pc) {
+    padding: 80px 0;
+    max-width: $max-w-lg;
+  }
+}
+
+.p-trainer__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-trainer__photo {
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 240px;
+  border-radius: 24px;
+  margin-bottom: 24px;
+  object-fit: cover;
+  object-position: center 40%;
+
+  @include mq(tb) {
+    height: 280px;
+  }
+
+  @include mq(pc) {
+    height: 320px;
+  }
+}
+
+.p-trainer__name {
+  font-family: $font-mincho;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 2px;
+
+  @include mq(tb) {
+    font-size: 22px;
+  }
+}
+
+.p-trainer__name-sub {
+  font-size: 14px;
+  color: $color-text-muted;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.p-trainer__profile-line {
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 20px;
+  padding: 12px 0;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+
+  p {
+    font-size: 12px;
+    color: $color-text-light;
+    letter-spacing: 1px;
+    line-height: 1.8;
+  }
+}
+
+.p-trainer__message {
+  font-size: 14px;
+  color: $color-text-sub;
+  line-height: 2.2;
+  padding: 20px 24px;
+  background: $color-bg-white;
+  border-radius: 16px;
+
+  @include mq(tb) {
+    font-size: 16px;
+  }
+}
+
+.p-trainer__message-more {
+  max-height: 1000px;
+  opacity: 1;
+  overflow: hidden;
+  transition:
+    max-height 1.4s ease,
+    opacity 0.3s ease;
+
+  &.is-closed {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+
+.p-trainer__toggle {
+  font-size: 14px;
+  color: $color-primary;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 12px auto 0;
+  letter-spacing: 1px;
+}
+
+.p-about-nano {
+  padding: 56px 0 0;
+}
+
+.p-about-nano__title {
+  font-size: 18px;
+  margin: 0 auto;
+  font-family: $font-mincho;
+  font-weight: 700;
+  border-bottom: 1px solid $color-primary;
+  width: fit-content;
+}
+
+// テキスト＋スライダーの2カラム（SPは1カラム）
+.p-about-nano__contents {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+  padding: 20px 24px;
+  font-size: 14px;
+  color: $color-text-sub;
+  line-height: 2.2;
+  background: $color-bg-white;
+  border-radius: 16px;
+
+  @include mq(tb) {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 16px;
+  }
+}
+
+.p-about-nano__text-box {
+  p + p {
+    margin-top: 12px;
+  }
+}
+
+.p-about-nano__swiper {
+  width: 100%;
+  min-width: 0;
+  --swiper-pagination-color: #{$color-primary};
+  --swiper-pagination-bullet-inactive-color: #{$color-primary};
+  --swiper-pagination-bullet-inactive-opacity: 0.3;
+
+  .swiper {
+    padding-bottom: 28px;
+
+    @include mq(tb) {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+.swiper-slide {
+  width: 280px;
+  aspect-ratio: 1 / 1;
+
+  @include mq(pc) {
+    width: 350px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+.p-about-nano__link {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+
+  @include mq(tb) {
+    gap: 32px;
+  }
+}
+
+.c-btn--about-nano {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color-primary;
+  color: $color-bg-white;
+  max-width: 280px;
+  margin-top: 24px;
+
+  @include mq(tb) {
+    margin-top: 32px;
+  }
+}

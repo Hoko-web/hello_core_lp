@@ -1,0 +1,41 @@
+// Access - アクセス情報
+
+@use "../../foundation/variable" as *;
+@use "../../foundation/mixin" as *;
+
+.p-access {
+  background: $color-bg-main;
+  padding: 56px 0;
+
+  @include mq(tb) {
+    padding: 64px 0;
+  }
+
+  @include mq(pc) {
+    padding: 80px 0;
+  }
+}
+
+.p-access__info {
+  font-size: 16px;
+  color: $color-text-sub;
+  line-height: 2.2;
+
+  @include mq(pc) {
+    max-width: $max-w-md;
+    margin: 0 auto;
+  }
+}
+
+.p-access__row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 4px;
+
+  dt {
+    font-weight: 600;
+    white-space: nowrap;
+    color: $color-text-main;
+  }
+}

@@ -1,0 +1,83 @@
+// Drawer - ヘッダーのSP用スライドメニュー（.is-open で右からスライドイン）
+
+@use "../../foundation/variable" as *;
+@use "../../foundation/mixin" as *;
+
+.p-header__drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  pointer-events: none;
+
+  @include mq(pc) {
+    display: none;
+  }
+}
+
+.p-header__drawer-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.p-header__drawer-body {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%;
+  max-width: 320px;
+  height: 100%;
+  background: $color-bg-main;
+  padding: 80px 28px 40px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.p-header__drawer.is-open {
+  pointer-events: auto;
+}
+
+.p-header__drawer.is-open .p-header__drawer-overlay {
+  opacity: 1;
+}
+
+.p-header__drawer.is-open .p-header__drawer-body {
+  transform: translateX(0);
+}
+
+.p-header__drawer-list {
+  flex-direction: column;
+
+  li {
+    border-bottom: 1px solid $color-border;
+  }
+}
+
+.p-header__drawer-link {
+  display: block;
+  padding: 8px 0;
+  font-size: 14px;
+  color: $color-text-main;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.p-header__drawer-cta {
+  margin-top: 14px;
+  max-width: none;
+}
+
+body.is-nav-open {
+  overflow: hidden;
+}

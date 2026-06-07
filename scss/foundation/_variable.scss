@@ -1,0 +1,40 @@
+// =====================================
+// Font Family
+// =====================================
+$font-gothic: "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+$font-mincho: "Noto Serif JP", "Hiragino Mincho ProN", Georgia, serif;
+
+// =====================================
+// Colors
+// =====================================
+$color-primary: #7a9e68;
+$color-primary-dark: #3a5030;
+$color-primary-light: #c8d5b9;
+
+$color-bg-main: #f7f4ef;
+$color-bg-sub: #ebf0e4;
+$color-bg-white: #fff;
+$color-bg-recommend: #fafdf7;
+
+$color-text-main: #4a4a3f;
+$color-text-sub: #666;
+$color-text-light: #8a8a7a;
+$color-text-muted: #808070; // WCAG AA 4.5:1（旧 #aaa）
+$color-text-faint: #918979; // WCAG AA 4.5:1（旧 #bbb）
+
+$color-border: #e8e3d9;
+$color-border-light: #eee;
+
+// =====================================
+// BreakPoint
+// =====================================
+$breakpoints: (
+  tb: 768px,
+  pc: 1024px,
+);
+
+// =====================================
+// Content Width
+// =====================================
+$max-w-md: 750px;
+$max-w-lg: 960px;

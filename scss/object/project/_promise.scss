@@ -1,0 +1,76 @@
+// Promise - 3つの約束（PCで3カラム）
+
+@use "../../foundation/variable" as *;
+@use "../../foundation/mixin" as *;
+
+.p-promise {
+  background: $color-bg-white;
+  padding: 56px 0;
+
+  @include mq(tb) {
+    padding: 64px 0;
+  }
+
+  @include mq(pc) {
+    padding: 80px 0;
+  }
+}
+
+.p-promise__blocks {
+  @include mq(pc) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+  }
+}
+
+.p-promise__block {
+  margin-bottom: 56px;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include mq(pc) {
+    margin-bottom: 0;
+  }
+}
+
+.p-promise__num {
+  display: block;
+  font-family: $font-mincho;
+  font-size: 48px;
+  font-weight: 200;
+  color: $color-primary-light;
+  line-height: 1;
+  margin-bottom: 4px;
+
+  @include mq(pc) {
+    font-size: 40px;
+  }
+}
+
+.p-promise__heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: $color-text-main;
+  margin-bottom: 8px;
+
+  @include mq(tb) {
+    font-size: 17px;
+  }
+}
+
+.p-promise__text {
+  font-size: 14px;
+  color: $color-text-light;
+  line-height: 1.8;
+  margin-bottom: 14px;
+  max-width: 350px;
+  text-align: center;
+
+  @include mq(pc) {
+    max-width: none;
+  }
+}

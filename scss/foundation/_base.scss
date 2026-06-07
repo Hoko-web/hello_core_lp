@@ -1,0 +1,79 @@
+// Base - reset 適用後の基本スタイル
+
+@use "variable" as *;
+@use "mixin" as *;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: $font-gothic;
+  color: $color-text-main;
+  background: $color-bg-main;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 1.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.inner {
+  width: 100%;
+  max-width: 540px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mq(tb) {
+    max-width: 750px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @include mq(pc) {
+    max-width: 960px;
+  }
+}
+
+// FAQ・流れ・アクセス（読みやすく狭め）
+.inner--narrow {
+  @include mq(tb) {
+    max-width: 480px;
+  }
+
+  @include mq(pc) {
+    max-width: 700px;
+  }
+}
+
+// 料金（さらに狭め）
+.inner--sm {
+  @include mq(tb) {
+    max-width: 480px;
+  }
+
+  @include mq(pc) {
+    max-width: 540px;
+  }
+}
+
+// motion を控えたいユーザーにはアニメ・トランジションを抑制（!important は例外的に許可）
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

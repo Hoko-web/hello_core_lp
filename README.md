@@ -38,4 +38,4 @@ https://hello-core-lp.pages.dev/
 
 ## 制作情報
 
-- 制作: Hiro
+- 制作: Hoko

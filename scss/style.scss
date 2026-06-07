@@ -1,36 +1,30 @@
-// ============================================
-// pilatesroom はろこあ - メインスタイルシート
-//
-// 対応      : モバイルファースト → 768px(tablet) → 1024px(desktop)
-//
-// コンパイル: scss/style.scss → css/style.css
-// リセットCSS: css/reset.css（destyle.css v4）を別途読み込み
-// ============================================
+// pilatesroom はろこあ - エントリ
+// FLOCSS: foundation（土台）→ object/component（再利用部品）→ object/project（固有）
 
-// --- Foundation（設計の土台） ---
-@import "variables"; // デザイントークン（カラー・フォント・ブレイクポイント）
-@import "mixins"; // レスポンシブ用メディアクエリ
-@import "base"; // 基本スタイル・コンテナ・プレースホルダー
+// Foundation
+@use "foundation/reset";
+@use "foundation/base";
 
-// --- Components（再利用パーツ） ---
-@import "components"; // ボタン・セクションラベル・タイトル
+// Object / Component（c- 再利用部品）
+@use "object/component/components";
+@use "object/component/sns";
+@use "object/component/cta";
 
-// --- Layout（レイアウト構造） ---
-@import "header"; // ヘッダー（sticky）
-@import "sp-nav"; // SP用スライドメニュー
-@import "footer"; // フッター
-@import "fixed-bar"; // 固定CTAバー
+// Object / Project（p- サイト/セクション固有・ページ表示順）
+@use "object/project/header";
+@use "object/project/drawer";
+@use "object/project/footer";
+@use "object/project/fixed-bar";
+@use "object/project/hero";
+@use "object/project/empathy";
+@use "object/project/promise";
+@use "object/project/trainer";
+@use "object/project/voice";
+@use "object/project/lesson";
+@use "object/project/price";
+@use "object/project/flow";
+@use "object/project/faq";
+@use "object/project/access";
 
-// --- Sections（ページ上部から表示順） ---
-@import "hero"; // メインビジュアル
-@import "empathy"; // 共感セクション
-@import "promise"; // 3つの約束
-@import "trainer"; // 講師紹介
-@import "voice"; // お客様の声
-@import "cta"; // Mid CTA + Final CTA
-@import "lesson"; // レッスン内容
-@import "price"; // 料金
-@import "flow"; // 無料体験の流れ
-@import "trial-day"; // 体験当日の流れ
-@import "faq"; // よくあるご質問
-@import "access"; // アクセス
+// Object / Utility（最後に読み込んで上書き可能に）
+@use "object/utility/utility";

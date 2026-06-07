@@ -21,8 +21,7 @@
       rel="stylesheet"
     />
 
-    <!-- メインサイトのCSS -->
-    <link rel="stylesheet" href="../css/reset.css" />
+    <!-- メインサイトのCSS（reset は style.css に取り込み済み） -->
     <link rel="stylesheet" href="../css/style.css" />
 
     <!-- プライバシーポリシー固有CSS -->
@@ -30,26 +29,26 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
-      <div class="container header__inner">
+    <header class="p-header">
+      <div class="p-header__inner">
         <a href="../index.html">
           <img
             src="../img/hellocore_logo.png"
             alt="pilatesroom はろこあ"
-            class="header__logo-img"
+            class="p-header__logo-img"
             width="400"
             height="390"
           />
         </a>
-        <div class="header__actions">
-          <a href="../index.html" class="header__cta-btn">トップページへ戻る</a>
+        <div class="p-header__actions">
+          <a href="../index.html" class="p-header__cta-btn">トップページへ戻る</a>
         </div>
       </div>
     </header>
 
     <!-- メインコンテンツ -->
     <main>
-      <div class="container">
+      <div class="inner">
         <section class="privacy-policy">
           <h1 class="privacy-policy__title">プライバシーポリシー</h1>
 
@@ -86,7 +85,7 @@
           </div>
 
           <div class="privacy-policy__back">
-            <a href="../index.html" class="btn btn--green"
+            <a href="../index.html" class="c-btn c-btn--green"
               >トップページに戻る</a
             >
           </div>
@@ -95,12 +94,12 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="footer__logo">pilatesroom はろこあ</div>
-      <div class="footer__legal">
+    <footer class="p-footer">
+      <div class="p-footer__logo">pilatesroom はろこあ</div>
+      <div class="p-footer__legal">
         <a href="./">プライバシーポリシー</a>
       </div>
-      <p class="footer__copy">
+      <p class="p-footer__copy">
         &copy; 2026 pilatesroom はろこあ All rights reserved.
       </p>
     </footer>

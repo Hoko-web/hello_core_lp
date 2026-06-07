@@ -1,46 +1,45 @@
-// ============================================
-// Voice - お客様の声セクション
-// 大きな引用符 + 感想テキスト
-// タブレット: 2列 / デスクトップ: 3列
-// ============================================
+// Voice - お客様の声（TB以上で2列）
 
-.voice {
-  background: $c-surface;
+@use "../../foundation/variable" as *;
+@use "../../foundation/mixin" as *;
+
+.p-voice {
+  background: $color-bg-white;
   padding: 56px 0;
 
-  @include tablet {
+  @include mq(tb) {
     padding: 64px 0;
   }
 
-  @include desktop {
+  @include mq(pc) {
     padding: 80px 0;
   }
 }
 
-.voice__list {
-  @include tablet {
+.p-voice__list {
+  @include mq(tb) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
 
-  @include desktop {
+  @include mq(pc) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.voice__item {
+.p-voice__item {
   padding: 28px 24px;
-  background: $c-bg;
+  background: $color-bg-main;
   border-radius: 20px;
   margin-bottom: 14px;
   position: relative;
 
-  // 装飾: 大きな引用符
+  // 装飾の大きな左ダブルクォート
   &::before {
-    content: "\201C"; // 左ダブルクォーテーション
+    content: "\201C";
     font-size: 60px;
-    color: $c-primary-light;
+    color: $color-primary-light;
     font-family: Georgia, serif;
     position: absolute;
     top: 10px;
@@ -48,36 +47,36 @@
     line-height: 1;
   }
 
-  @include tablet {
+  @include mq(tb) {
     margin-bottom: 0;
   }
 }
 
-.voice__before {
+.p-voice__before {
   font-size: 14px;
-  color: $c-primary;
+  color: $color-primary;
   margin-bottom: 8px;
   font-style: italic;
 }
 
-.voice__quote {
+.p-voice__quote {
   font-size: 16px;
-  color: $c-heading;
+  color: $color-text-main;
   line-height: 1.9;
   padding-left: 8px;
   margin-bottom: 12px;
   font-style: normal;
 }
 
-.voice__body {
+.p-voice__body {
   font-size: 14px;
-  color: $c-text-light;
+  color: $color-text-light;
   line-height: 1.8;
 }
 
-.voice__who {
+.p-voice__who {
   font-size: 12px;
-  color: $c-text-muted;
+  color: $color-text-muted;
   margin-top: 10px;
   text-align: right;
   font-style: normal;

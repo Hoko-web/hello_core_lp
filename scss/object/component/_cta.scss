@@ -1,0 +1,93 @@
+// CTA - 中間（mid-cta）と最終（final-cta）の2か所
+
+@use "../../foundation/variable" as *;
+@use "../../foundation/mixin" as *;
+
+.p-mid-cta {
+  background: $color-bg-white;
+  padding-top: 0;
+  padding-bottom: 48px;
+
+  text-align: center;
+
+  @include mq(tb) {
+    padding-top: 0;
+    padding-bottom: 64px;
+  }
+
+  @include mq(pc) {
+    padding-top: 0;
+    padding-bottom: 80px;
+  }
+}
+
+.p-mid-cta__lead {
+  font-size: 18px;
+  font-weight: 600;
+  color: $color-text-main;
+  margin-bottom: 6px;
+  line-height: 1.8;
+
+  @include mq(tb) {
+    font-size: 20px;
+  }
+}
+
+.p-mid-cta__sub {
+  font-size: 14px;
+  color: $color-primary;
+  margin-bottom: 20px;
+}
+
+.p-final-cta {
+  background: $color-primary;
+  padding: 56px 0 48px;
+  text-align: center;
+  color: $color-bg-white;
+  position: relative;
+
+  @include mq(tb) {
+    padding: 72px 0 64px;
+  }
+
+  @include mq(pc) {
+    padding: 80px 0;
+  }
+}
+
+.p-final-cta__wave {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  overflow: hidden;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include mq(tb) {
+    height: 30px;
+    top: -30px;
+  }
+}
+
+.p-final-cta__main {
+  font-family: $font-mincho;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+
+  @include mq(tb) {
+    font-size: 26px;
+  }
+}
+
+.p-final-cta__sub {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}

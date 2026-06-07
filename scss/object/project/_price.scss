@@ -1,0 +1,158 @@
+// Price - 料金（12回券を「いちばん人気」として強調）
+
+@use "../../foundation/variable" as *;
+@use "../../foundation/mixin" as *;
+
+.p-price {
+  background: $color-bg-white;
+  padding: 56px 0;
+
+  @include mq(tb) {
+    padding: 64px 0;
+  }
+
+  @include mq(pc) {
+    padding: 80px 0;
+  }
+}
+
+.p-price__free-box {
+  text-align: center;
+  padding: 15px;
+  background: $color-bg-sub;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.p-price__free-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: $color-primary;
+}
+
+.p-price__free-sub {
+  font-size: 12px;
+  color: $color-text-light;
+}
+
+.p-price__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid $color-border;
+}
+
+.p-price__item-name {
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+}
+
+.p-price__item-name--lg {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.p-price__item-detail {
+  font-size: 12px;
+  color: $color-text-faint;
+  margin-top: 2px;
+  display: block;
+}
+
+.p-price__item-amount {
+  font-size: 16px;
+  font-weight: 700;
+  color: $color-primary;
+  display: block;
+}
+
+.p-price__item-amount--lg {
+  font-size: 18px;
+}
+
+.p-price__item-per {
+  font-size: 12px;
+  color: $color-text-muted;
+  text-align: right;
+  display: block;
+}
+
+.p-price__recommend {
+  border: 2px solid $color-primary;
+  border-radius: 16px;
+  padding: 18px;
+  margin: 12px 0;
+  position: relative;
+  background: $color-bg-recommend;
+}
+
+.p-price__recommend-badge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $color-primary;
+  color: $color-bg-white;
+  font-size: 14px;
+  padding: 3px 14px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.p-price__recommend-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6px;
+}
+
+.p-price__recommend-note {
+  font-size: 12px;
+  color: $color-text-light;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.p-price__note {
+  font-size: 12px;
+  color: $color-text-faint;
+  margin-top: 14px;
+}
+
+.p-price__private {
+  margin-top: 28px;
+}
+
+.p-price__private-heading {
+  font-size: 14px;
+  font-weight: 600;
+  color: $color-text-muted;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.p-price__item--small {
+  border-bottom-color: $color-border;
+
+  .p-price__item-name {
+    font-size: 12px;
+    color: $color-text-muted;
+  }
+
+  .p-price__item-detail {
+    font-size: 10px;
+    color: $color-text-faint;
+  }
+
+  .p-price__item-amount {
+    font-size: 14px;
+    color: $color-text-muted;
+  }
+
+  .p-price__item-per {
+    font-size: 10px;
+    color: $color-text-faint;
+  }
+}
