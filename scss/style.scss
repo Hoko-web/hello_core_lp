@@ -6,9 +6,9 @@
 @use "foundation/base";
 
 // Object / Component（c- 再利用部品）
-@use "object/component/components";
+@use "object/component/btn";
+@use "object/component/heading";
 @use "object/component/sns";
-@use "object/component/cta";
 
 // Object / Project（p- サイト/セクション固有・ページ表示順）
 @use "object/project/header";
@@ -20,6 +20,7 @@
 @use "object/project/promise";
 @use "object/project/trainer";
 @use "object/project/voice";
+@use "object/project/cta";
 @use "object/project/lesson";
 @use "object/project/price";
 @use "object/project/flow";

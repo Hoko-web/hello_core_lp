@@ -58,7 +58,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600;700&family=Noto+Serif+JP:wght@200;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&family=Noto+Serif+JP:wght@400;700&display=swap"
       rel="stylesheet"
       media="print"
       onload="this.media = 'all'"
@@ -140,14 +140,28 @@
         <div class="p-header__drawer-body">
           <nav aria-label="メニュー">
             <ul class="p-header__drawer-list">
-              <li><a href="#promise" class="p-header__drawer-link">3つの約束</a></li>
-              <li><a href="#trainer" class="p-header__drawer-link">講師紹介</a></li>
-              <li><a href="#voice" class="p-header__drawer-link">お客様の声</a></li>
-              <li><a href="#lesson" class="p-header__drawer-link">レッスン</a></li>
+              <li>
+                <a href="#promise" class="p-header__drawer-link">3つの約束</a>
+              </li>
+              <li>
+                <a href="#trainer" class="p-header__drawer-link">講師紹介</a>
+              </li>
+              <li>
+                <a href="#voice" class="p-header__drawer-link">お客様の声</a>
+              </li>
+              <li>
+                <a href="#lesson" class="p-header__drawer-link">レッスン</a>
+              </li>
               <li><a href="#price" class="p-header__drawer-link">料金</a></li>
-              <li><a href="#flow" class="p-header__drawer-link">体験の流れ</a></li>
-              <li><a href="#faq" class="p-header__drawer-link">よくある質問</a></li>
-              <li><a href="#access" class="p-header__drawer-link">アクセス</a></li>
+              <li>
+                <a href="#flow" class="p-header__drawer-link">体験の流れ</a>
+              </li>
+              <li>
+                <a href="#faq" class="p-header__drawer-link">よくある質問</a>
+              </li>
+              <li>
+                <a href="#access" class="p-header__drawer-link">アクセス</a>
+              </li>
             </ul>
           </nav>
           <a
@@ -322,7 +336,7 @@
       <!-- Trainer: 講師紹介（長文は「続きを読む」で開閉） -->
       <section class="p-trainer" id="trainer">
         <div class="inner" data-aos="fade-up">
-          <p class="c-section-label c-section-label--green">TRAINER</p>
+          <p class="c-section-label">TRAINER</p>
           <h2 class="c-section-title">講師紹介</h2>
           <div class="p-trainer__content">
             <img
@@ -382,8 +396,8 @@
               nano認定ピラティストレーナーとは？
             </h3>
 
-            <div class="p-about-nano__contents">
-              <div class="p-about-nano__text-box">
+            <div class="p-about-nano__body">
+              <div class="p-about-nano__text">
                 <p class="p-about-nano__description">
                   私は、「スタジオnano」のピラティスインストラクター養成スクールを修了したnano認定トレーナーです。
                 </p>
@@ -394,7 +408,7 @@
                   先日「スタジオnano」の亀谷なおみ先生が、はろこあのスタジオについてインタビューをしてくださいました。「スタジオnano」のホームページでもご紹介してくださっています。
                 </p>
               </div>
-              <div class="p-about-nano__swiper">
+              <div class="p-about-nano__gallery">
                 <!-- Swiper 本体 -->
                 <div class="swiper">
                   <!-- スライド一覧 -->
@@ -445,13 +459,19 @@
                 </div>
               </div>
             </div>
-            <div class="p-about-nano__link">
-              <a href="https://studio-nano.com/" class="c-btn c-btn--about-nano"
+            <div class="p-about-nano__buttons">
+              <a
+                href="https://studio-nano.com/"
+                class="c-btn p-about-nano__btn"
+                target="_blank"
+                rel="noopener noreferrer"
                 >スタジオnano <br class="u-br-sp" />ホームページ</a
               >
               <a
                 href="https://studio-nano.com/leader/voice/"
-                class="c-btn c-btn--about-nano"
+                class="c-btn p-about-nano__btn"
+                target="_blank"
+                rel="noopener noreferrer"
                 >インタビュー <br class="u-br-sp" />記事はこちら</a
               >
             </div>
