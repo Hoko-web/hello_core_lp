@@ -4,22 +4,22 @@
 
 .c-btn {
   display: block;
-  padding: 15px 24px;
+  padding: 16px 24px;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
+  border: 1px solid transparent;
   border-radius: 30px;
-  transition: opacity 0.3s ease;
-  letter-spacing: 1.2px;
-
-  &:hover {
-    opacity: 0.85;
-  }
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .c-btn--green {
   background: $color-primary;
   color: $color-bg-white;
+  border-color: $color-primary;
   max-width: 280px;
   margin: 0 auto;
 }
@@ -27,15 +27,33 @@
 .c-btn--white {
   background: $color-bg-white;
   color: $color-primary;
+  border-color: $color-bg-white;
   max-width: 270px;
   margin: 0 auto;
 }
 
 .c-btn--menu {
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 50px;
   background: $color-primary;
   color: $color-bg-white;
+  border-color: $color-primary;
   max-width: 260px;
   margin: 0 auto;
+}
+
+// PC（ホバー可能端末）でホバー時に背景↔文字色を反転
+@media (hover: hover) {
+  .c-btn--green:hover,
+  .c-btn--menu:hover {
+    background: $color-bg-white;
+    color: $color-primary;
+    border-color: $color-primary;
+  }
+
+  .c-btn--white:hover {
+    background: $color-primary;
+    color: $color-bg-white;
+    border-color: $color-bg-white;
+  }
 }

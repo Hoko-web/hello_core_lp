@@ -38,7 +38,7 @@
   font-size: 16px;
   font-weight: 600;
   color: $color-text-main;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   cursor: pointer;
   position: relative;
   padding-right: 24px;
@@ -71,12 +71,14 @@
 
 // 開いている時は −（U+2212 MINUS SIGN）
 .p-faq__item[open] .p-faq__question::after {
-  content: "\2212";
+  content: "-";
 }
 
 .p-faq__answer {
   font-size: 16px;
   color: $color-text-muted;
   line-height: 1.8;
-  margin-top: 6px;
+  padding-top: 8px; // 高さアニメに余白を含めるため margin ではなく padding
+  overflow: hidden;
+  transition: height 0.3s ease;
 }

@@ -58,7 +58,7 @@
   margin-bottom: 8px;
 
   @include mq(tb) {
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 
@@ -66,7 +66,7 @@
   font-size: 14px;
   color: $color-text-light;
   line-height: 1.8;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   max-width: 350px;
   text-align: center;
 

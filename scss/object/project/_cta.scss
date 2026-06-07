@@ -25,7 +25,7 @@
   font-size: 18px;
   font-weight: 600;
   color: $color-text-main;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   line-height: 1.8;
 
   @include mq(tb) {
@@ -77,9 +77,9 @@
 
 .p-final-cta__main {
   font-family: $font-mincho;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 
   @include mq(tb) {
     font-size: 26px;

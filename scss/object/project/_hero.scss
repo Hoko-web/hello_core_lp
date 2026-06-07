@@ -109,7 +109,7 @@
   font-size: 26px;
   font-weight: 700;
   line-height: 1.9;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 
   @include mq(tb) {
     font-size: 30px;
@@ -137,7 +137,6 @@
   opacity: 0;
   animation: heroFadeUp 0.8s ease 0.5s forwards;
   margin-bottom: 24px;
-  letter-spacing: 1px;
 
   @include mq(tb) {
     font-size: 16px;
@@ -160,7 +159,7 @@
 
 .p-hero__badge {
   font-size: 14px;
-  padding: 5px 14px;
+  padding: 4px 16px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.12);
   color: rgba(255, 255, 255, 0.85);

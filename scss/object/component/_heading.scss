@@ -5,23 +5,23 @@
 
 .c-section-label {
   font-size: 18px;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: $color-primary;
   text-align: center;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .c-section-title {
   font-family: $font-mincho;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   text-align: center;
   margin-bottom: 28px;
   color: $color-text-main;
 
   @include mq(tb) {
-    font-size: 26px;
+    font-size: 30px;
     margin-bottom: 36px;
   }
 

@@ -67,7 +67,7 @@
 .p-lesson__card-meta {
   font-size: 14px;
   color: $color-text-muted;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .p-lesson__card-desc {
@@ -79,7 +79,7 @@
 .p-lesson__tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 8px;
   margin-top: 12px;
 }
 
@@ -104,6 +104,7 @@
 .p-lesson__private-title {
   font-size: 14px;
   font-weight: 600;
+
   color: $color-text-sub;
   margin-bottom: 4px;
 }
@@ -111,14 +112,15 @@
 .p-lesson__private-text {
   font-size: 14px;
   line-height: 1.7;
+  text-align: left;
 }
 
 .p-lesson__private-coming {
   font-size: 12px;
   color: $color-text-faint;
   display: inline-block;
-  margin-top: 6px;
+  margin-top: 8px;
   border: 1px solid $color-border;
-  padding: 2px 10px;
+  padding: 4px 12px;
   border-radius: 10px;
 }
