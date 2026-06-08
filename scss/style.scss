@@ -1,21 +1,18 @@
-// pilatesroom はろこあ - エントリ
-// FLOCSS: foundation（土台）→ object/component（再利用部品）→ object/project（固有）
-
 // Foundation
 @use "foundation/reset";
 @use "foundation/base";
 
-// Object / Component（c- 再利用部品）
+// Object / Component
 @use "object/component/btn";
 @use "object/component/heading";
 @use "object/component/sns";
 
-// Object / Project（p- サイト/セクション固有・ページ表示順）
+// Object / Project
 @use "object/project/header";
 @use "object/project/drawer";
 @use "object/project/footer";
 @use "object/project/fixed-bar";
-@use "object/project/hero";
+@use "object/project/fv";
 @use "object/project/empathy";
 @use "object/project/promise";
 @use "object/project/trainer";
@@ -27,5 +24,5 @@
 @use "object/project/faq";
 @use "object/project/access";
 
-// Object / Utility（最後に読み込んで上書き可能に）
+// Object / Utility
 @use "object/utility/utility";

@@ -4,18 +4,18 @@
 @use "../../foundation/mixin" as *;
 
 .p-trainer {
-  padding: 56px 0;
   max-width: 500px;
+  padding: 56px 0;
   margin: 0 auto;
 
   @include mq(tb) {
-    padding: 64px 0;
     max-width: $max-w-md;
+    padding: 64px 0;
   }
 
   @include mq(pc) {
-    padding: 80px 0;
     max-width: $max-w-lg;
+    padding: 80px 0;
   }
 }
 
@@ -27,13 +27,13 @@
 .p-trainer__photo {
   width: 100%;
   max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
   height: 240px;
-  border-radius: 24px;
+  margin-right: auto;
   margin-bottom: 24px;
+  margin-left: auto;
   object-fit: cover;
   object-position: center 40%;
+  border-radius: 24px;
 
   @include mq(tb) {
     height: 280px;
@@ -45,10 +45,10 @@
 }
 
 .p-trainer__name {
+  margin-bottom: 4px;
   font-family: $font-mincho;
   font-size: 24px;
   text-align: center;
-  margin-bottom: 4px;
 
   @include mq(tb) {
     font-size: 22px;
@@ -56,32 +56,32 @@
 }
 
 .p-trainer__name-sub {
+  margin-bottom: 16px;
   font-size: 14px;
   color: $color-text-muted;
   text-align: center;
-  margin-bottom: 16px;
 }
 
 .p-trainer__profile-line {
-  text-align: center;
+  padding: 12px 0;
   margin-top: 16px;
   margin-bottom: 20px;
-  padding: 12px 0;
+  text-align: center;
   border-top: 1px solid $color-border;
   border-bottom: 1px solid $color-border;
 
   p {
     font-size: 12px;
-    color: $color-text-light;
     line-height: 1.8;
+    color: $color-text-light;
   }
 }
 
 .p-trainer__message {
-  font-size: 14px;
-  color: $color-text-sub;
-  line-height: 2.2;
   padding: 20px 24px;
+  font-size: 14px;
+  line-height: 2.2;
+  color: $color-text-sub;
   background: $color-bg-white;
   border-radius: 16px;
 
@@ -92,8 +92,8 @@
 
 .p-trainer__message-more {
   max-height: 1000px;
-  opacity: 1;
   overflow: hidden;
+  opacity: 1;
   transition:
     max-height 1.4s ease,
     opacity 0.3s ease;
@@ -105,13 +105,13 @@
 }
 
 .p-trainer__toggle {
-  font-size: 14px;
-  color: $color-primary;
-  background: none;
-  border: none;
-  cursor: pointer;
   display: block;
   margin: 12px auto 0;
+  font-size: 14px;
+  color: $color-primary;
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 
 // スタジオnano認定トレーナーとは？
@@ -120,21 +120,21 @@
 }
 
 .p-about-nano__title {
-  font-size: 18px;
+  width: fit-content;
   margin: 0 auto;
   font-family: $font-mincho;
+  font-size: 18px;
   font-weight: 700;
   border-bottom: 1px solid $color-primary;
-  width: fit-content;
 }
 
 .p-about-nano__body {
   display: grid;
   grid-template-columns: 1fr;
-  align-items: center;
   gap: 24px;
-  margin-top: 24px;
+  align-items: center;
   padding: 20px 24px;
+  margin-top: 24px;
   background: $color-bg-white;
   border-radius: 16px;
 
@@ -145,8 +145,8 @@
 
 .p-about-nano__text {
   font-size: 14px;
-  color: $color-text-sub;
   line-height: 2.2;
+  color: $color-text-sub;
 
   @include mq(tb) {
     font-size: 16px;
@@ -164,6 +164,7 @@
 .p-about-nano__gallery {
   width: 100%;
   min-width: 0;
+
   --swiper-pagination-color: #{$color-primary};
   --swiper-pagination-bullet-inactive-color: #{$color-primary};
   --swiper-pagination-bullet-inactive-opacity: 0.3;
@@ -195,8 +196,8 @@
 
 .p-about-nano__buttons {
   display: flex;
-  justify-content: center;
   gap: 12px;
+  justify-content: center;
   margin-top: 24px;
 
   @include mq(tb) {
@@ -207,17 +208,17 @@
 
 .p-about-nano__btn {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: $color-primary;
-  color: $color-bg-white;
-  border-color: $color-primary;
+  justify-content: center;
   min-width: 160px;
+  color: $color-bg-white;
+  background: $color-primary;
+  border-color: $color-primary;
 }
 
 @media (hover: hover) {
   .p-about-nano__btn:hover {
-    background: $color-bg-white;
     color: $color-primary;
+    background: $color-bg-white;
   }
 }

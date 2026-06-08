@@ -3,7 +3,6 @@
 
 // =====================================
 // MediaQuery（min-width / モバイルファースト）
-//   使い方: @include mq(tb) { ... } / @include mq(pc) { ... }
 // =====================================
 @mixin mq($breakpoint: pc) {
   @media (min-width: map.get($breakpoints, $breakpoint)) {

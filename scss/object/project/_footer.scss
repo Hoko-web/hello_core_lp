@@ -4,10 +4,10 @@
 @use "../../foundation/mixin" as *;
 
 .p-footer {
-  background: $color-primary-dark;
   padding: 32px 24px;
-  text-align: center;
   color: $color-bg-white;
+  text-align: center;
+  background: $color-primary-dark;
 
   @include mq(tb) {
     padding: 48px 40px;
@@ -15,9 +15,9 @@
 }
 
 .p-footer__logo {
+  margin-bottom: 16px;
   font-size: 14px;
   letter-spacing: 0.1em;
-  margin-bottom: 16px;
   opacity: 0.5;
 }
 
@@ -30,13 +30,13 @@
 
   @include mq(tb) {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 16px;
+    justify-content: center;
   }
 
   a {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgb(255 255 255 / 60%);
     transition: color 0.3s ease;
 
     &:hover {
@@ -47,22 +47,22 @@
 
 .p-footer__legal {
   display: flex;
-  justify-content: center;
   gap: 16px;
+  justify-content: center;
   margin-bottom: 16px;
   font-size: 12px;
 
   a {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgb(255 255 255 / 30%);
     transition: color 0.3s ease;
 
     &:hover {
-      color: rgba(255, 255, 255, 0.6);
+      color: rgb(255 255 255 / 60%);
     }
   }
 }
 
 .p-footer__copy {
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.25);
+  color: rgb(255 255 255 / 25%);
 }

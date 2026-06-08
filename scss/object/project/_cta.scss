@@ -4,11 +4,10 @@
 @use "../../foundation/mixin" as *;
 
 .p-mid-cta {
-  background: $color-bg-white;
   padding-top: 0;
   padding-bottom: 48px;
-
   text-align: center;
+  background: $color-bg-white;
 
   @include mq(tb) {
     padding-top: 0;
@@ -22,11 +21,11 @@
 }
 
 .p-mid-cta__lead {
+  margin-bottom: 8px;
   font-size: 18px;
   font-weight: 600;
-  color: $color-text-main;
-  margin-bottom: 8px;
   line-height: 1.8;
+  color: $color-text-main;
 
   @include mq(tb) {
     font-size: 20px;
@@ -34,17 +33,17 @@
 }
 
 .p-mid-cta__sub {
+  margin-bottom: 20px;
   font-size: 14px;
   color: $color-primary;
-  margin-bottom: 20px;
 }
 
 .p-final-cta {
-  background: $color-primary;
-  padding: 56px 0 48px;
-  text-align: center;
-  color: $color-bg-white;
   position: relative;
+  padding: 56px 0 48px;
+  color: $color-bg-white;
+  text-align: center;
+  background: $color-primary;
 
   @include mq(tb) {
     padding: 72px 0 64px;
@@ -58,8 +57,8 @@
 .p-final-cta__wave {
   position: absolute;
   top: -20px;
-  left: 0;
   right: 0;
+  left: 0;
   height: 20px;
   overflow: hidden;
 
@@ -70,16 +69,16 @@
   }
 
   @include mq(tb) {
-    height: 30px;
     top: -30px;
+    height: 30px;
   }
 }
 
 .p-final-cta__main {
+  margin-bottom: 8px;
   font-family: $font-mincho;
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 8px;
 
   @include mq(tb) {
     font-size: 26px;
@@ -87,7 +86,7 @@
 }
 
 .p-final-cta__sub {
+  margin-bottom: 20px;
   font-size: 16px;
   opacity: 0.7;
-  margin-bottom: 20px;
 }

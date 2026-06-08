@@ -55,8 +55,8 @@
       });
     }
 
-    // Hero 写真クロスフェード（reduced-motion 時は切り替えない）
-    const photos = document.querySelectorAll(".p-hero__photo");
+    // FV 写真クロスフェード（reduced-motion 時は切り替えない）
+    const photos = document.querySelectorAll(".p-fv__photo");
     if (photos.length > 1 && !prefersReducedMotion) {
       let current = 0;
 
@@ -129,11 +129,11 @@
       });
     });
 
-    // 固定CTAバー: ヒーローが画面外に出たら表示
+    // 固定CTAバー: FVが画面外に出たら表示
     const fixedBar = document.querySelector(".js-fixed-bar");
-    const hero = document.querySelector(".p-hero");
+    const fv = document.querySelector(".p-fv");
 
-    if (fixedBar && hero) {
+    if (fixedBar && fv) {
       const barObserver = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
@@ -147,7 +147,7 @@
         { threshold: 0 },
       );
 
-      barObserver.observe(hero);
+      barObserver.observe(fv);
     }
   });
 

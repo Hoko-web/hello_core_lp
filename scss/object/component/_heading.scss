@@ -1,28 +1,26 @@
-// Heading - セクションの英字ラベル ＋ 見出し
-
 @use "../../foundation/variable" as *;
 @use "../../foundation/mixin" as *;
 
 .c-section-label {
+  margin-bottom: 8px;
   font-size: 18px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: $color-primary;
   text-align: center;
-  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .c-section-title {
+  margin-bottom: 28px;
   font-family: $font-mincho;
   font-size: 26px;
   font-weight: 700;
-  text-align: center;
-  margin-bottom: 28px;
   color: $color-text-main;
+  text-align: center;
 
   @include mq(tb) {
-    font-size: 30px;
     margin-bottom: 36px;
+    font-size: 30px;
   }
 
   @include mq(pc) {

@@ -4,8 +4,8 @@
 @use "../../foundation/mixin" as *;
 
 .p-access {
-  background: $color-bg-main;
   padding: 56px 0;
+  background: $color-bg-main;
 
   @include mq(tb) {
     padding: 64px 0;
@@ -18,8 +18,8 @@
 
 .p-access__info {
   font-size: 16px;
-  color: $color-text-sub;
   line-height: 2.2;
+  color: $color-text-sub;
 
   @include mq(pc) {
     max-width: $max-w-md;
@@ -35,7 +35,7 @@
 
   dt {
     font-weight: 600;
-    white-space: nowrap;
     color: $color-text-main;
+    white-space: nowrap;
   }
 }

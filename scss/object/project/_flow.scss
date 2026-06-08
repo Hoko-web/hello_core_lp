@@ -4,8 +4,8 @@
 @use "../../foundation/mixin" as *;
 
 .p-flow {
-  background: $color-bg-main;
   padding: 56px 0;
+  background: $color-bg-main;
 
   @include mq(tb) {
     padding: 64px 0;
@@ -31,30 +31,30 @@
 }
 
 .p-flow__num {
-  width: 32px;
-  height: 32px;
-  border: 1px solid $color-primary-light;
-  border-radius: 50%;
-  font-size: 14px;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  color: $color-primary;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
   font-weight: 600;
+  color: $color-primary;
+  border: 1px solid $color-primary-light;
+  border-radius: 50%;
 }
 
 .p-flow__step-title {
-  font-size: 16px;
   margin-bottom: 16px;
+  font-size: 16px;
   font-weight: 600;
   color: $color-text-main;
 }
 
 .p-flow__step-text {
   font-size: 16px;
-  color: $color-text-muted;
   line-height: 1.6;
+  color: $color-text-muted;
 }
 
 .p-flow__cta {
@@ -62,7 +62,7 @@
 }
 
 .p-flow__cta-label {
+  margin-bottom: 12px;
   font-size: 12px;
   color: $color-text-sub;
-  margin-bottom: 12px;
 }

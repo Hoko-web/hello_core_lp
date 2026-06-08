@@ -4,8 +4,8 @@
 @use "../../foundation/mixin" as *;
 
 .p-empathy {
-  background: $color-bg-main;
   padding: 56px 0;
+  background: $color-bg-main;
 
   @include mq(tb) {
     padding: 64px 0;
@@ -17,12 +17,12 @@
 }
 
 .p-empathy__lead {
+  margin-bottom: 36px;
   font-size: 20px;
-  text-align: center;
+  font-weight: 400;
   line-height: 2.2;
   color: $color-text-main;
-  margin-bottom: 36px;
-  font-weight: 400;
+  text-align: center;
 
   strong {
     font-weight: 600;
@@ -30,8 +30,8 @@
   }
 
   @include mq(tb) {
-    font-size: 24px;
     margin-bottom: 44px;
+    font-size: 24px;
   }
 }
 
@@ -52,23 +52,24 @@
 }
 
 .p-empathy__item {
-  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 16px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $color-text-light;
   background: $color-bg-white;
   border-radius: 40px;
-  color: $color-text-light;
-  text-align: center;
-
-  line-height: 1.5;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1px 8px rgb(0 0 0 / 3%);
 }
 
 .p-empathy__closing {
-  font-size: 16px;
-  text-align: center;
-  color: $color-text-light;
-  line-height: 2;
   margin-top: 28px;
+  font-size: 16px;
+  line-height: 2;
+  color: $color-text-light;
+  text-align: center;
 
   @include mq(tb) {
     margin-top: 36px;

@@ -10,19 +10,19 @@ html {
 
 body {
   font-family: $font-gothic;
-  color: $color-text-main;
-  background: $color-bg-main;
   font-size: 16px;
   line-height: 1.8;
+  color: $color-text-main;
   letter-spacing: 0.05em;
+  background: $color-bg-main;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
 .inner {
@@ -71,9 +71,9 @@ img {
   *,
   *::before,
   *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
   }
 }

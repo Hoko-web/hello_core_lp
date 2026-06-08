@@ -1,7 +1,8 @@
+// SPのみ表示する改行（タブレット以上で非表示）
+
 @use "../../foundation/variable" as *;
 @use "../../foundation/mixin" as *;
 
-// SPのみ表示する改行（タブレット以上で非表示）
 .u-br-sp {
   @include mq(tb) {
     display: none;

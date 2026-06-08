@@ -4,8 +4,8 @@
 @use "../../foundation/mixin" as *;
 
 .p-promise {
-  background: $color-bg-white;
   padding: 56px 0;
+  background: $color-bg-white;
 
   @include mq(tb) {
     padding: 64px 0;
@@ -39,12 +39,12 @@
 
 .p-promise__num {
   display: block;
+  margin-bottom: 4px;
   font-family: $font-mincho;
   font-size: 48px;
   font-weight: 400;
-  color: $color-primary-light;
   line-height: 1;
-  margin-bottom: 4px;
+  color: $color-primary-light;
 
   @include mq(pc) {
     font-size: 40px;
@@ -52,10 +52,10 @@
 }
 
 .p-promise__heading {
+  margin-bottom: 8px;
   font-size: 18px;
   font-weight: 600;
   color: $color-text-main;
-  margin-bottom: 8px;
 
   @include mq(tb) {
     font-size: 20px;
@@ -63,11 +63,13 @@
 }
 
 .p-promise__text {
-  font-size: 14px;
-  color: $color-text-light;
-  line-height: 1.8;
-  margin-bottom: 16px;
   max-width: 350px;
+  margin-right: auto;
+  margin-bottom: 16px;
+  margin-left: auto;
+  font-size: 14px;
+  line-height: 1.8;
+  color: $color-text-light;
   text-align: center;
 
   @include mq(pc) {

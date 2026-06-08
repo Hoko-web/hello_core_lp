@@ -4,8 +4,8 @@
 @use "../../foundation/mixin" as *;
 
 .p-faq {
-  background: $color-bg-white;
   padding: 56px 0;
+  background: $color-bg-white;
 
   @include mq(tb) {
     padding: 64px 0;
@@ -24,8 +24,8 @@
 }
 
 .p-faq__item {
-  margin-bottom: 16px;
   padding-bottom: 16px;
+  margin-bottom: 16px;
   border-bottom: 1px solid $color-border-light;
 
   &:last-child {
@@ -35,13 +35,13 @@
 }
 
 .p-faq__question {
+  position: relative;
+  padding-right: 24px;
+  margin-bottom: 8px;
   font-size: 16px;
   font-weight: 600;
   color: $color-text-main;
-  margin-bottom: 8px;
   cursor: pointer;
-  position: relative;
-  padding-right: 24px;
   list-style: none;
 
   // Safari のデフォルト三角マーカーを消す
@@ -51,34 +51,34 @@
 
   // Q. ラベル
   &::before {
-    content: "Q.";
-    color: $color-primary;
-    font-weight: 700;
     margin-right: 4px;
+    font-weight: 700;
+    color: $color-primary;
+    content: "Q.";
   }
 
   // 開閉アイコン（閉じている時は +）
   &::after {
-    content: "+";
     position: absolute;
-    right: 0;
     top: 0;
+    right: 0;
     font-size: 16px;
     color: $color-primary-light;
+    content: "+";
     transition: transform 0.3s ease;
   }
 }
 
-// 開いている時は −（U+2212 MINUS SIGN）
+// 開いている時は −
 .p-faq__item[open] .p-faq__question::after {
   content: "-";
 }
 
 .p-faq__answer {
-  font-size: 16px;
-  color: $color-text-muted;
-  line-height: 1.8;
   padding-top: 8px; // 高さアニメに余白を含めるため margin ではなく padding
   overflow: hidden;
+  font-size: 16px;
+  line-height: 1.8;
+  color: $color-text-muted;
   transition: height 0.3s ease;
 }

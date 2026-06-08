@@ -4,8 +4,8 @@
 @use "../../foundation/mixin" as *;
 
 .p-voice {
-  background: $color-bg-white;
   padding: 56px 0;
+  background: $color-bg-white;
 
   @include mq(tb) {
     padding: 64px 0;
@@ -29,22 +29,22 @@
 }
 
 .p-voice__item {
+  position: relative;
   padding: 28px 24px;
+  margin-bottom: 16px;
   background: $color-bg-main;
   border-radius: 20px;
-  margin-bottom: 16px;
-  position: relative;
 
   // 装飾の大きな左ダブルクォート
   &::before {
-    content: "\201C";
-    font-size: 60px;
-    color: $color-primary-light;
-    font-family: Georgia, serif;
     position: absolute;
     top: 10px;
     left: 18px;
+    font-family: Georgia, serif;
+    font-size: 60px;
     line-height: 1;
+    color: $color-primary-light;
+    content: "\201C";
   }
 
   @include mq(tb) {
@@ -53,31 +53,31 @@
 }
 
 .p-voice__before {
-  font-size: 14px;
-  color: $color-primary;
   margin-bottom: 8px;
+  font-size: 14px;
   font-style: italic;
+  color: $color-primary;
 }
 
 .p-voice__quote {
-  font-size: 16px;
-  color: $color-text-main;
-  line-height: 1.9;
   padding-left: 8px;
   margin-bottom: 12px;
+  font-size: 16px;
   font-style: normal;
+  line-height: 1.9;
+  color: $color-text-main;
 }
 
 .p-voice__body {
   font-size: 14px;
-  color: $color-text-light;
   line-height: 1.8;
+  color: $color-text-light;
 }
 
 .p-voice__who {
-  font-size: 12px;
-  color: $color-text-muted;
   margin-top: 12px;
-  text-align: right;
+  font-size: 12px;
   font-style: normal;
+  color: $color-text-muted;
+  text-align: right;
 }
