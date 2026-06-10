@@ -129,17 +129,40 @@
 }
 
 .p-about-nano__body {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
-  align-items: center;
   padding: 20px 24px;
   margin-top: 24px;
   background: $color-bg-white;
   border-radius: 16px;
+}
+
+.p-about-nano__more {
+  max-height: 1600px;
+  overflow: hidden;
+  opacity: 1;
+  transition:
+    max-height 1.3s ease,
+    opacity 0.3s ease;
+
+  &.is-closed {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+
+.p-about-nano__detail {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.p-about-nano__lead {
+  font-size: 14px;
+  line-height: 2.2;
+  color: $color-text-sub;
 
   @include mq(tb) {
-    grid-template-columns: repeat(2, 1fr);
+    font-size: 16px;
   }
 }
 
@@ -165,18 +188,6 @@
   width: 100%;
   min-width: 0;
 
-  --swiper-pagination-color: #{$color-primary};
-  --swiper-pagination-bullet-inactive-color: #{$color-primary};
-  --swiper-pagination-bullet-inactive-opacity: 0.3;
-
-  .swiper {
-    padding-bottom: 28px;
-
-    @include mq(tb) {
-      padding-bottom: 40px;
-    }
-  }
-
   .swiper-slide {
     width: 280px;
     aspect-ratio: 1 / 1;
@@ -192,6 +203,16 @@
       border-radius: 8px;
     }
   }
+}
+
+.p-about-nano__toggle {
+  display: block;
+  margin: 12px auto 0;
+  font-size: 14px;
+  color: $color-primary;
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 
 .p-about-nano__buttons {

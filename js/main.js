@@ -80,6 +80,20 @@
       });
     }
 
+    // スタジオnano「続きを読む」開閉
+    const nanoToggle = document.querySelector(".p-about-nano__toggle");
+    const nanoMore = document.querySelector(".p-about-nano__more");
+
+    if (nanoToggle && nanoMore) {
+      nanoToggle.addEventListener("click", () => {
+        nanoMore.classList.toggle("is-closed");
+        const isClosed = nanoMore.classList.contains("is-closed");
+        nanoToggle.textContent = isClosed ? "続きを読む" : "閉じる";
+        nanoToggle.setAttribute("aria-expanded", !isClosed);
+        if (!isClosed) aboutSwiper.update();
+      });
+    }
+
     // FAQ: <details> をスムーズに開閉（JS無効でもネイティブで即開閉＝退化OK）
     const faqItems = document.querySelectorAll(".p-faq__item");
     faqItems.forEach((item) => {
@@ -151,7 +165,7 @@
     }
   });
 
-  new Swiper(".swiper", {
+  const aboutSwiper = new Swiper(".swiper", {
     direction: "horizontal",
     loop: true,
     spaceBetween: 16,
@@ -165,8 +179,5 @@
           delay: 0,
           disableOnInteraction: false,
         },
-    pagination: {
-      el: ".swiper-pagination",
-    },
   });
 })();
