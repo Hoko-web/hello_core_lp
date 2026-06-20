@@ -83,7 +83,6 @@
     // スタジオnano「続きを読む」開閉
     const nanoToggle = document.querySelector(".p-about-nano__toggle");
     const nanoMore = document.querySelector(".p-about-nano__more");
-
     if (nanoToggle && nanoMore) {
       nanoToggle.addEventListener("click", () => {
         nanoMore.classList.toggle("is-closed");

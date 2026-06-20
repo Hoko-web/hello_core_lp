@@ -232,14 +232,14 @@
   align-items: center;
   justify-content: center;
   min-width: 160px;
-  color: $color-bg-white;
-  background: $color-primary;
-  border-color: $color-primary;
+  color: $color-primary;
+  background: $color-bg-white;
+  border-color: $color-bg-white;
 }
 
 @media (hover: hover) {
   .p-about-nano__btn:hover {
-    color: $color-primary;
-    background: $color-bg-white;
+    color: $color-bg-white;
+    background: $color-primary;
   }
 }

@@ -20,7 +20,9 @@
  */
 html {
   line-height: 1.15; /* 1 */
-  text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%; /* 2 */
   -webkit-tap-highlight-color: transparent; /* 3 */
 }
 
@@ -131,7 +133,8 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -212,7 +215,9 @@ textarea {
   color: inherit;
   text-align: inherit;
   text-transform: inherit; /* 2 */
-  appearance: none; /* 1 */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; /* 1 */
   background: transparent;
   border-radius: 0;
 }
@@ -298,7 +303,8 @@ textarea {
  * Remove the inner padding in Chrome and Safari on macOS.
  */
 [type=search]::-webkit-search-decoration {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 /**
@@ -307,14 +313,17 @@ textarea {
  */
 ::-webkit-file-upload-button {
   font: inherit; /* 2 */
-  appearance: button; /* 1 */
+  -webkit-appearance: button;
+          appearance: button; /* 1 */
 }
 
 /**
  * Fix appearance for Firefox
  */
 [type=number] {
-  appearance: textfield;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
 }
 
 /**
@@ -893,7 +902,8 @@ body.is-nav-open {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   opacity: 0;
   transition: opacity 1.2s ease;
 }
@@ -1251,8 +1261,10 @@ body.is-nav-open {
   margin-right: auto;
   margin-bottom: 24px;
   margin-left: auto;
-  object-fit: cover;
-  object-position: center 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 40%;
+     object-position: center 40%;
   border-radius: 24px;
 }
 @media (min-width: 768px) {
@@ -1339,6 +1351,7 @@ body.is-nav-open {
 }
 
 .p-about-nano__title {
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   font-family: "Noto Serif JP", "Hiragino Mincho ProN", georgia, serif;
@@ -1418,7 +1431,8 @@ body.is-nav-open {
 .p-about-nano__gallery .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 8px;
 }
 
@@ -1450,15 +1464,15 @@ body.is-nav-open {
   align-items: center;
   justify-content: center;
   min-width: 160px;
-  color: #fff;
-  background: #7a9e68;
-  border-color: #7a9e68;
+  color: #7a9e68;
+  background: #fff;
+  border-color: #fff;
 }
 
 @media (hover: hover) {
   .p-about-nano__btn:hover {
-    color: #7a9e68;
-    background: #fff;
+    color: #fff;
+    background: #7a9e68;
   }
 }
 .p-voice {
@@ -1670,8 +1684,10 @@ body.is-nav-open {
 .p-lesson__card-img img {
   width: 100%;
   height: 180px;
-  object-fit: cover;
-  object-position: center 46%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 46%;
+     object-position: center 46%;
   transform: scale(1.4) translateX(4%);
 }
 @media (min-width: 768px) {
